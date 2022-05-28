@@ -1,0 +1,15 @@
+'account_add.html':
+  document:
+    jinja: >
+'account_edit.html':
+  document:
+    jinja: >
+      {% extends "appbuilder/base.html" %}
+      {% block content %}
+      {% endblock %}
+'account_show.html':
+  document:
+    jinja: >
+      {% extends "appbuilder/base.html" %}
+      {% block content %}
+      {% endblock %}

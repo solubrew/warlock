@@ -1,0 +1,170 @@
+'ElementModel':
+  name: 'Element Model Table'
+  description: >
+  db:
+  columns:
+    elementsid:
+      dargs: *mdlKWARGa000
+      oargs: ''
+    name:
+      dargs: *mdlKWARGa001
+      oargs: ''
+    uuid:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    'atomicweight':
+      dargs: *mdlKWARGa002
+      oargs: ''
+    'weight':
+      dargs: *mdlKWARGa002
+      oargs: ''
+    'symbol':
+      dargs: *mdlKWARGa002
+      oargs: ''
+    'atomicnumber':
+      dargs: *mdlKWARGa002
+      oargs: ''
+    'energy':
+      dargs: *mdlKWARGa002
+      oargs: ''
+    'density':
+      dargs: *mdlKWARGa002
+      oargs: ''
+    'volume':
+      dargs: *mdlKWARGa002
+      oargs: ''
+    'energy_density':
+      dargs: *mdlKWARGa002
+      oargs: ''
+    'atomic_energy':
+      dargs: *mdlKWARGa002
+      oargs: ''
+    'melting_point':
+      dargs: *mdlKWARGa002
+      oargs: ''
+    'boiling_point':
+      dargs: *mdlKWARGa002
+      oargs: ''
+    'covalent_diameter':
+      dargs: *mdlKWARGa002
+      oargs: ''
+    'atomic_volume':
+      dargs: *mdlKWARGa002
+      oargs: ''
+    'energy_of_first_ionization':
+      dargs: *mdlKWARGa002
+      oargs: ''
+    'specific_heat_capacity':
+      dargs: *mdlKWARGa002
+      oargs: ''
+    'thermal_conductivity':
+      dargs: *mdlKWARGa002
+      oargs: ''
+    'electrical_conductivity':
+      dargs: *mdlKWARGa002
+      oargs: ''
+    'heat_of_fusion':
+      dargs: *mdlKWARGa002
+      oargs: ''
+    'heat_of_vaporization':
+      dargs: *mdlKWARGa002
+      oargs: ''
+    'paulings_electronegativity':
+      dargs: *mdlKWARGa002
+      oargs: ''
+    'ph':
+      dargs: *mdlKWARGa002
+      oargs: ''
+    'crystal_structure':
+      dargs: *mdlKWARGa002
+      oargs: ''
+    'enthalpy':
+      dargs: *mdlKWARGa002
+      oargs: ''
+    'electron_configuration':
+      dargs: *mdlKWARGa002
+      oargs: ''
+'EnergyModel':
+  name: 'Element Model Table'
+  description: >
+  db:
+  columns:
+    elementsid:
+      dargs: *mdlKWARGa000
+      oargs: ''
+    name:
+      dargs: *mdlKWARGa001
+      oargs: ''
+    uuid:
+      dargs: *mdlKWARGa002
+      oargs: ''
+'FrequencyModel':
+  name: 'Element Model Table'
+  description: >
+  db:
+  columns:
+    elementsid:
+      dargs: *mdlKWARGa000
+      oargs: ''
+    name:
+      dargs: *mdlKWARGa001
+      oargs: ''
+    uuid:
+      dargs: *mdlKWARGa002
+      oargs: ''
+'MoleculeModel':
+  name: 'Element Model Table'
+  description: >
+  db:
+  columns:
+    elementsid:
+      dargs: *mdlKWARGa000
+      oargs: ''
+    name:
+      dargs: *mdlKWARGa001
+      oargs: ''
+    uuid:
+      dargs: *mdlKWARGa002
+      oargs: ''
+'MineralModel':
+  name: 'Element Model Table'
+  description: >
+  db:
+  columns:
+    elementsid:
+      dargs: *mdlKWARGa000
+      oargs: ''
+    name:
+      dargs: *mdlKWARGa001
+      oargs: ''
+    uuid:
+      dargs: *mdlKWARGa002
+      oargs: ''
+'MaterialModel':
+  name: 'Element Model Table'
+  description: >
+  db:
+  columns:
+    elementsid:
+      dargs: *mdlKWARGa000
+      oargs: ''
+    name:
+      dargs: *mdlKWARGa001
+      oargs: ''
+    uuid:
+      dargs: *mdlKWARGa002
+      oargs: ''
+'ParticleModel':
+  name: 'Element Model Table'
+  description: >
+  db:
+  columns:
+    elementsid:
+      dargs: *mdlKWARGa000
+      oargs: ''
+    name:
+      dargs: *mdlKWARGa001
+      oargs: ''
+    uuid:
+      dargs: *mdlKWARGa002
+      oargs: ''

@@ -1,0 +1,9 @@
+{% extends "appbuilder/general/model/show.html" %}
+{% import 'appbuilder/general/lib.html' as lib %}
+{% block content %}
+  {% block show_form %}
+      <div id="Home" class="tab-pane active">
+          {{ widgets.get('show')()|safe }}
+      </div>
+  {% endblock show_form %}
+{% endblock content %}

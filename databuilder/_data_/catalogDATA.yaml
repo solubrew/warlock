@@ -1,0 +1,62 @@
+CatalogModel:
+  'name':
+  'uuid': ['<(UUID)>', '<(UUID)>', '<(UUID)>']
+'ProductDigitalModel':
+  'name':
+  'description':
+  'state':
+  'uuid': ['<(UUID)>', '<(UUID)>', '<(UUID)>']
+'ProductPhysicalModel':
+  'name':
+  'description':
+  'state':
+  'uuid': ['<(UUID)>', '<(UUID)>', '<(UUID)>']
+'SpecModel':
+  'name':
+  'description':
+  'state':
+  'uuid': ['<(UUID)>', '<(UUID)>', '<(UUID)>']
+'BinaryModel':
+  'name':
+  'description':
+  'state':
+  'uuid': ['<(UUID)>', '<(UUID)>', '<(UUID)>']
+'ReviewModel':
+  'name':
+  'description':
+  'state':
+  'uuid': ['<(UUID)>', '<(UUID)>', '<(UUID)>']
+'ProcurementModel':
+  'name':
+  'description':
+  'state':
+  'uuid': ['<(UUID)>', '<(UUID)>', '<(UUID)>']
+alextursions:
+  name: <[size]> Al Extrusion <[length]>
+  description:
+  type: physical
+  price:
+  size: [5x5, 10x10, 15x15, 20x20, 25x25, 25x50, 50x50, 50x100]
+  length:
+    - [5,300,5]
+    - [325, 600, 25]
+    - [700, 900, 100]
+  'color': ['black', 'red', 'pink', 'green', 'blue', 'orange']
+  'files':
+overlay:
+  name:
+  description:
+  type: digital
+  template:
+  colors:
+    '000': ['#FFFFFF', '#000000']
+extrsutionpanel:
+  name:
+  description:
+  type: physical
+  price:
+  cost:
+  length:
+  width: [0,200,10]
+  length: [0,200,10]
+  'color': ['black', 'red', 'pink', 'green', 'blue', 'orange']

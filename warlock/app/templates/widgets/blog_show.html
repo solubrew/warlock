@@ -1,0 +1,20 @@
+<!-- Blog Show Widget -->
+{% import 'appbuilder/general/lib.html' as lib %}
+<link href="{{url_for('static',filename='css/base.css')}}" rel="stylesheet">
+
+<p class="name"><h1>{{ value_columns[0] }}</h1></p>
+<p class="description"><h2>Description:</h2><br>
+<blockquote>{{ value_columns[1] }}</blockquote></p>
+<p class=video>{{ value_columns[5]|safe }}</p>
+<p class=length><h6>Length:</h6>{{ value_columns[8]|safe }}</p>
+<p class=tools><h2>Tools:</h2>{{ value_columns[3]|safe }}</p>
+<p class=tags><h2>Tags: </h2>{{ value_columns[6]|safe }}</p>
+<p class=code><h2>Code:</h2>
+<blockquote><pre>{{ value_columns[7]|safe }}</pre></blockquote></p>
+<p class="github"><h2>Github Files</h2></p>
+<blockquote><pre>{{ value_columns[9] }}</pre></blockquote>
+
+<div class="well well-sm">
+    {{ lib.render_action_links(actions, pk, modelview_name) }}
+    {{ lib.lnk_back() }}
+</div>

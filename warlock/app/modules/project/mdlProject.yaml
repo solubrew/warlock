@@ -1,0 +1,14 @@
+ProjectModel:
+  name: 'Project Model Table'
+  description: >
+  db:
+  columns:
+    projectid:
+      dargs: *mdlKWARGa000
+      oargs: ''
+    name:
+      dargs: *mdlKWARGa001
+      oargs: ''
+    uuid:
+      dargs: *mdlKWARGa002
+      oargs: ''

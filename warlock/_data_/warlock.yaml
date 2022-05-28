@@ -1,0 +1,62 @@
+---
+<(META)>:
+  docid:
+  name:
+  description: >
+  expirary: <[expiration]>
+  Version: <[Version]>
+  path: <[LEXIvrs]>panda/LEXI/
+  outline: <[outline]>
+  authority: document|this
+  security: sec|lvl2
+  <(WT)>: -32
+'framework':
+  flask:
+    path: <[AIMvrs]>bear/
+    aggregation_site:
+      tools:
+        pheonix:
+        flaskapp:
+        superset:
+    product_sales_site:
+      tools:
+        pheonix:
+        flaskapp:
+        superset:
+    member_site:
+      tools:
+        pheonix:
+        flaskapp:
+        superset:
+  nikola:
+    aggregation_site:
+      tools:
+        pheonix:
+        flaskapp:
+        superset:
+    product_sales_site:
+      tools:
+        pheonix:
+        flaskapp:
+        superset:
+    member_site:
+      tools:
+        pheonix:
+        flaskapp:
+        superset:
+  sanic:
+    aggregation_site:
+      tools:
+        pheonix:
+        flaskapp:
+        superset:
+    product_sales_site:
+      tools:
+        pheonix:
+        flaskapp:
+        superset:
+    member_site:
+      tools:
+        pheonix:
+        flaskapp:
+        superset:

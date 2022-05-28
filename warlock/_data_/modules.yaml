@@ -1,0 +1,35 @@
+css:
+  files:
+    - <[css:.module_name.:.yaml]>
+  'template':
+form:
+  files:
+    - <[frm:.module_name.:.yaml]>
+  'template':
+'graphics':
+  'files':
+    - <[gric:.module_name.:.yaml]>
+  'template':
+'models':
+  <[mdl:.module_name.:.yaml]>:
+    'template':
+      '<[model.:Model]>':
+        'name': '<[model_name.: Model Table]>'
+        'description':
+        'db':
+        'columns':
+          '<[lower(name).:id]>':
+            'dargs':
+            'oargs':
+'templates':
+  'files':
+    - <[tmplt:.module_name.:.yaml]>
+  'template':
+'views':
+  'files':
+    - <[vw:.module_name.:.yaml]>
+  'template':
+'widgets':
+  'files':
+    - <[wdgt:.module_name.:.yaml]>
+  'template':

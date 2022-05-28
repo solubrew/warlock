@@ -1,0 +1,40 @@
+{% extends "appbuilder/base.html" %}
+
+{% import "../_base/templates/macros.html" as macros %}
+
+{% block content %}
+<h1>{{ valuecolumns.title }}</h1>
+<h4>Terms:</h4>
+<h6>{{ valuecolumns.terms }}</h6>
+<section>
+	<h4>Description: </h4>
+	{{ for i in tabs }}
+		 <p class="tab{{ i }}">{{valuecolumns.tabtile}}</p>
+	  <!DOCTYPE html>
+	  <html>
+	  <head>
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  </head>
+
+	  <body>
+	  <h2>Tabs</h2>
+	  <p>Click on the buttons inside the tabbed menu:</p>
+	  <div class="tab">
+	    <button class="tablinks" onclick="openTab(event, tabcontent)">London</button>
+	  </div>
+	  <div id="London" class="tabcontent">
+	    <h3>London</h3>
+	    <p>London is the capital city of England.</p>
+	  </div>
+
+	{{ endfor }}
+
+  </body>
+  </html>
+</section>
+{% endblock %}
+
+{% block tail_js %}
+	{{ super() }}
+	{{ macros.tab() }}
+{% endblock %}

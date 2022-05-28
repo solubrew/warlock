@@ -1,0 +1,32 @@
+{
+  'os': [
+    'alpine': {
+      'name': '<[name]>',
+      'seq_title': '<[seq_title]>',
+      'tools': '<[tools]>',
+      'video_link': '<[video_link]>',
+      'video_length': '<[video_length]>'
+    },
+    'debian': {
+      'name': '<[name]>',
+      'seq_title': '<[seq_title]>',
+      'tools': '<[tools]>',
+      'video_link': '<[video_link]>',
+      'video_length': '<[video_length]>'
+    },
+    'mac': {
+      'name': '<[name]>',
+      'seq_title': '<[seq_title]>',
+      'tools': '<[tools]>',
+      'video_link': '<[video_link]>',
+      'video_length': '<[video_length]>'
+    },
+    'windows': {
+      'name': '<[name]>',
+      'seq_title': '<[seq_title]>',
+      'tools': '<[tools]>',
+      'video_link': '<[video_link]>',
+      'video_length': '<[video_length]>'
+    }
+  ]
+}

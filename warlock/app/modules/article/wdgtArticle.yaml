@@ -1,0 +1,3 @@
+BlogShowWidget:
+  'object': 'flask_appbuilder.widgets.ShowWidget'
+  'template': 'widgets/blog_show.html'

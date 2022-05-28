@@ -1,0 +1,28 @@
+DatasetModel:
+  name: 'Dataset Model Table'
+  description: >
+  db:
+  columns:
+    datasetid:
+      dargs: *mdlKWARGa000
+      oargs: ''
+    description:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    uuid:
+      dargs: *mdlKWARGa002
+      oargs: ''
+DatasetDescriptionModel:
+  name: 'Dataset Description Model Table'
+  description: >
+  db:
+  columns:
+    datasetdescriptionid:
+      dargs: *mdlKWARGa000
+      oargs: ''
+    description:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    uuid:
+      dargs: *mdlKWARGa002
+      oargs: ''

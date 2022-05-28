@@ -1,0 +1,22 @@
+'ArticleModel':
+  'title':
+  'description':
+  'uuid': ['<(UUID)>', '<(UUID)>', '<(UUID)>']
+  'date': ['2020-08-09', '2020-08-10', '2020-08-11']
+  'text':
+  'tags':
+  'state':
+'BlogModel':
+  'title':
+  'description':
+    - <(PATH)>: '<(VEINvrs)>/DataVein/TestDRs/jyaskDR/2020-08-09_blog_description.yaml'
+    - <(PATH)>: '<(VEINvrs)>/DataVein/TestDRs/jyaskDR/2020-08-10_blog_description.yaml'
+    - <(PATH)>: '<(VEINvrs)>/DataVein/TestDRs/jyaskDR/2020-08-11_blog_description.yaml'
+  'uuid': ['<(UUID)>', '<(UUID)>', '<(UUID)>']
+  'date': ['2020-08-09', '2020-08-10', '2020-08-11']
+  'text':
+    - <(PATH)>: '<(VEINvrs)>/DataVein/TestDRs/jyaskDR/2020-08-09_blog.yaml'
+    - <(PATH)>: '<(VEINvrs)>/DataVein/TestDRs/jyaskDR/2020-08-10_blog.yaml'
+    - <(PATH)>: '<(VEINvrs)>/DataVein/TestDRs/jyaskDR/2020-08-11_blog.yaml'
+  'tags': ['#python', '#lesson', '#tutorial', '#excel', '#']
+  'state':

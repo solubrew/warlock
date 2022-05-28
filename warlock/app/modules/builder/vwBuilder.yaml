@@ -1,0 +1,13 @@
+ModulesModelView:
+  'self':
+    datamodel:
+      interface: *IFACEa000
+      model: 'app.models.ModulesModel'
+  registration:
+    class: app.views.ModulesModelView
+    kwargs:
+      'icon': *icon0
+      'category': 'Modules'
+      'category_icon': *icon1
+    'title': 'List Modules'
+  viewtype: *VIEWa001

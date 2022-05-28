@@ -1,0 +1,26 @@
+ReservationModel:
+  name: 'Reservations Model Table'
+  description: >
+  db:
+  columns:
+    reservationid:
+      dargs: *mdlKWARGa000
+      oargs: ''
+    uuid:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    start_date:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    end_date:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    asset_id:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    payment_id:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    user_id:
+      dargs: *mdlKWARGa002
+      oargs: ''

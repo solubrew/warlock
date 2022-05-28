@@ -1,0 +1,162 @@
+---
+icons:
+  sources: >
+    https://fontawesome.com/icons?d=gallery&m=free
+  links:
+    - &icon0 "fa-folder-open-o"
+    - &icon1 "fa-envelope"
+    - &icon2 "fa-align-justify"
+    - &icon3 "fa-align-left"
+    - &icon4 "fa-align-right"
+    - &icon5 "fa-angle-down"
+    - &icon6 "fa-angle-up"
+    - &icon7 "fa-angle-left"
+    - &icon8 "fa-angle-right"
+    - &icon9 "fa-angle-double-down"
+    - &icon10 "fa-angle-double-up"
+    - &icon11 "fa-angle-double-left"
+    - &icon12 "fa-angle-dobule-right"
+    - &icon13 "fa-btc"
+    - &icon14 "fa-calendar-alt"
+    - &icon15 "fa-cc-amazon-pay"
+    - &icon16 "fa-cc-amex"
+    - &icon17 "fa-cc-apple-pay"
+    - &icon18 "fa-cc-diners-club"
+    - &icon19 "fa-cc-dicovercard"
+    - &icon20 "fa-cc-jcb"
+    - &icon21 "fa-cc-mastercard"
+    - &icon22 "fa-cc-paypal"
+    - &icon23 "fa-cc-stripe"
+    - &icon24 "fa-cc-visa"
+    - &icon25 "fa-chart-area"
+    - &icon26 "fa-chart-bar"
+    - &icon27 "fa-chart-line"
+    - &icon28 "fa-chart-pie"
+    - &icon29 "fa-ethereum"
+interfaces:
+  SQLAlchemyInterface: &IFACEa000 'flask_appbuilder.models.sqla.interface.SQLAInterface'
+  JSONInterface: &IFACEa001 ''
+  YAMLInterface: &IFACEa002 ''
+  ARKInterface: &IFACEa003 ''
+  BTCInterface: &IFACEa004 ''
+  ETHInterface: &IFACEa005 ''
+  TRONInterface: &IFACEa006 ''
+baseviews:
+  - &VIEWa000 'flask_appbuilder.BaseView'
+  - &VIEWa001 'flask_appbuilder.ModelView'
+  - &VIEWa003 'flask_appbuilder.charts.views.DirectByChartView'
+  - &VIEWa004 'flask_appbuilder.charts.views.GroupByChartView'
+viewTemplates:
+  tmpltModelView:
+    self:
+      'datamodel':
+        'interface': ''
+        'model': ''
+      'list_columns':
+      'add_columns':
+      'edit_columns':
+      'show_columns':
+      'related_views':
+      'show_template':
+      'edit_template':
+    form: ''
+    registration:
+      class: ''
+      title: ''
+      kwargs:
+        'icon': ''
+        'category': ''
+        'category_icon': ''
+    viewtype: *VIEWa001
+    attrs:
+    methods:
+  tmpltBaseView:
+    registration:
+      class: ''
+      title: ''
+      kwargs:
+        'icon': ''
+        'category': ''
+        'category_icon': ''
+    viewtype: *VIEWa001
+  tmpltDirectByChartView:
+    datamodel:
+      interface: ''
+      model: ''
+    chart_title: ''
+    definitions:
+      -
+        'label': '<[label]>'
+        'group': '<[group]>'
+        'series':
+          - <@[series.:,]@>
+    registration:
+      class: ''
+      title: ''
+      kwargs:
+        'icon': ''
+        'category': ''
+        'category_icon': ''
+    viewtype: *VIEWa001
+  tmpltGroupByChartView:
+    datamodel:
+      interface: ''
+      model: ''
+    chart_title: ''
+    definitions:
+      -
+        'label': '<[label]>'
+        'group': '<[group]>'
+        'formatter': ''
+        'series':
+          - <@[series.:,]@>
+    registration:
+      class: ''
+      title: ''
+      kwargs:
+        'icon': ''
+        'category': ''
+        'category_icon': ''
+    viewtype: *VIEWa001
+modelViews:
+  account: <(INCL)>../modules/account/vwAccount.yaml
+  admin: <(INCL)>../modules/admin/vwAdmin.yaml
+  article: <(INCL)>../modules/article/vwArticle.yaml
+  asset: <(INCL)>../modules/asset/vwAsset.yaml
+  calendar: <(INCL)>../modules/calendar/vwCalendar.yaml
+  catalog: <(INCL)>../modules/catalog/vwCatalog.yaml
+  dataset: <(INCL)>../modules/dataset/vwDataset.yaml
+  ecommerce: <(INCL)>../modules/ecommerce/vwEcommerce.yaml
+  graphics:
+  guide: <(INCL)>../modules/guide/vwGuide.yaml
+  inventory: <(INCL)>../modules/inventory/vwInventory.yaml
+  library: <(INCL)>../modules/library/vwLibrary.yaml
+  location: <(INCL)>../modules/location/vwLocation.yaml
+  operations: <(INCL)>../modules/operation/vwOperation.yaml
+  presearch:
+  projects:
+  reports:
+simpleViews:
+  route_base: '/simpleview'
+  methods:
+    method1:
+      decorators:
+        expose: '/method1/<string:param1>'
+      def: 'param1'
+      args: 'param1'
+      kwargs:
+      render:
+        args: ''
+        kwargs:
+          title: ''
+          template: ''
+          session_variable: ''
+  registration:
+    class: 'app.views.SimpleView'
+    kwargs:
+      'category': 'Simple'
+    links:
+      category: ''
+      href:
+    title: 'Simple View'
+  viewtype: *VIEWa000

@@ -1,0 +1,160 @@
+GuideModel:
+  name: 'Guide Page Model Table'
+  description: >
+  db:
+  columns:
+    guideid:
+      dargs: *mdlKWARGa000
+      oargs:
+        roles: ['admin', 'dev']
+    name:
+      dargs: *mdlKWARGa001
+      oargs:
+        roles: ['public']
+    uuid:
+      dargs: *mdlKWARGa002
+      oargs:
+    seq_title:
+      dargs: *mdlKWARGa002
+      oargs:
+        roles: ['public']
+    tools:
+      dargs: *mdlKWARGa002
+      oargs:
+        roles: ['public']
+    video:
+      dargs: *mdlKWARGa002
+      oargs:
+        roles: ['public']
+    video_length:
+      dargs: *mdlKWARGa002
+      oargs:
+        roles: ['public']
+    title:
+      dargs: *mdlKWARGa002
+      oargs:
+        roles: ['public']
+    description:
+      dargs: *mdlKWARGa002
+      oargs:
+        roles: ['public']
+    tags:
+      dargs: *mdlKWARGa002
+      oargs:
+        roles: ['public']
+    textid:
+      dargs: *mdlKWARGa002
+      oargs:
+        ForeignKey: text.textid
+        roles: ['admin', 'dev']
+GuideGroupModel:
+  name: 'Guide Group Model Table'
+  description: >
+  db:
+  columns:
+    guidegroupid:
+      dargs: *mdlKWARGa000
+      oargs:
+    name:
+      dargs: *mdlKWARGa001
+      oargs:
+        roles: ['public']
+    description:
+      dargs: *mdlKWARGa002
+      oargs:
+        roles: ['public']
+    uuid:
+      dargs: *mdlKWARGa002
+      oargs:
+    state:
+      dargs: *mdlKWARGa002
+      oargs:
+        size: 10
+        roles: ['public']
+    guideid:
+      dargs: *mdlKWARGa003
+      oargs:
+        ForeignKey: guide.guideid
+        roles: ['admin', 'dev']
+LessonModel:
+  name: 'Guide Group Model Table'
+  description: >
+  db:
+  columns:
+    lessonid:
+      dargs: *mdlKWARGa000
+      oargs:
+    name:
+      dargs: *mdlKWARGa001
+      oargs:
+        roles: ['public']
+    description:
+      dargs: *mdlKWARGa007
+      oargs:
+        roles: ['public']
+    tools:
+      dargs: *mdlKWARGa007
+      oargs:
+        roles: ['public']
+    interface:
+      dargs: *mdlKWARGa007
+      oargs:
+        roles: ['public']
+    length:
+      dargs: *mdlKWARGa002
+      oargs:
+        roles: ['public']
+    video_embed:
+      dargs: *mdlKWARGa007
+      oargs:
+        roles: ['public']
+    tags:
+      dargs: *mdlKWARGa007
+      oargs:
+        roles: ['public']
+    code:
+      dargs: *mdlKWARGa007
+      oargs:
+        roles: ['public']
+    uuid:
+      dargs: *mdlKWARGa002
+      oargs:
+    state:
+      dargs: *mdlKWARGa002
+      oargs:
+        size: 10
+        roles: ['public']
+    guideid:
+      dargs: *mdlKWARGa003
+      oargs:
+        ForeignKey: guide.guideid
+        roles: ['admin', 'dev']
+LessonGroupModel:
+  name: 'Guide Group Model Table'
+  description: >
+  db:
+  columns:
+    lessongroupid:
+      dargs: *mdlKWARGa000
+      oargs:
+    name:
+      dargs: *mdlKWARGa001
+      oargs:
+        roles: ['public']
+    description:
+      dargs: *mdlKWARGa002
+      oargs:
+        roles: ['public']
+    uuid:
+      dargs: *mdlKWARGa002
+      oargs:
+    state:
+      dargs: *mdlKWARGa002
+      oargs:
+        size: 10
+        roles: ['public']
+    guideid:
+      dargs: *mdlKWARGa003
+      oargs:
+        ForeignKey: guide.guideid
+        roles: ['admin', 'dev']

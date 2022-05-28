@@ -1,0 +1,23 @@
+'CartModel':
+  'username':
+  'description':
+  'uuid': ['<(UUID)>', '<(UUID)>', '<(UUID)>']
+'OrderModel':
+  'username':
+  'description':
+  'uuid': ['<(UUID)>', '<(UUID)>', '<(UUID)>']
+'DiscountModel':
+  'orderid':
+  'uuid': ['<(UUID)>', '<(UUID)>', '<(UUID)>']
+'OrderPaymentModel':
+  'orderid':
+  'paymentmethodsid':
+  'uuid': ['<(UUID)>', '<(UUID)>', '<(UUID)>']
+'UserCartModel':
+  'username':
+  'description':
+  'uuid': ['<(UUID)>', '<(UUID)>', '<(UUID)>']
+'UserOrderModel':
+  'username':
+  'description':
+  'uuid': ['<(UUID)>', '<(UUID)>', '<(UUID)>']

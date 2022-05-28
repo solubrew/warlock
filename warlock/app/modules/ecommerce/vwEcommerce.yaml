@@ -1,0 +1,88 @@
+CartModelView:
+  'self':
+    datamodel:
+      interface: *IFACEa000
+      model: 'app.models.CartModel'
+  registration:
+    class: app.views.CartModelView
+    'title': 'List Cart'
+    kwargs:
+      'icon': *icon0
+      'category': 'Cart'
+      'category_icon': *icon1
+  viewtype: *VIEWa001
+  attrs:
+    add_template: 'form_vertical.html'
+    add_widget: 'app.widgets.CartAddWidget'
+    list_template: 'cart_list.html'
+    show_template: 'cart_show.html'
+    show_widget: 'app.widgets.CartShowWidget'
+  methods:
+OrderModelView:
+  'self':
+    datamodel:
+      interface: *IFACEa000
+      model: 'app.models.OrderModel'
+  registration:
+    class: app.views.OrderModelView
+    'title': 'List User Order'
+    kwargs:
+      'icon': *icon0
+      'category': 'Cart'
+      'category_icon': *icon1
+  viewtype: *VIEWa001
+  attrs:
+    add_template: 'form_vertical.html'
+    add_widget: 'app.widgets.OrderAddWidget'
+    list_template: 'order_list.html'
+    show_template: 'order_show.html'
+    show_widget: 'app.widgets.OrderShowWidget'
+  methods:
+UserCartModelView:
+  'self':
+    datamodel:
+      interface: *IFACEa000
+      model: 'app.models.UserCartModel'
+  registration:
+    class: app.views.UserCartModelView
+    'title': 'List User Cart'
+    kwargs:
+      'icon': *icon0
+      'category': 'Cart'
+      'category_icon': *icon1
+  viewtype: *VIEWa001
+  attrs:
+    add_template: 'form_vertical.html'
+    add_widget: 'app.widgets.UserCartAddWidget'
+    list_template: 'user_cart_list.html'
+    show_template: 'user_cart_show.html'
+    show_widget: 'app.widgets.UserCartShowWidget'
+  methods:
+    cancelled:
+      render_template: 'cancelled.html'
+    success:
+      render_template: 'success.html'
+    checkout:
+      python: ecommerce
+    stripe_webhook:
+      python: ecommerce
+UserOrderModelView:
+  'self':
+    datamodel:
+      interface: *IFACEa000
+      model: 'app.models.UserOrderModel'
+  registration:
+    class: app.views.UserOrderModelView
+    'title': 'List Order'
+    kwargs:
+      'icon': *icon0
+      'category': 'Order'
+      'category_icon': *icon1
+  viewtype: *VIEWa001
+  attrs:
+    add_template: 'form_vertical.html'
+    add_widget: 'app.widgets.UserOrderAddWidget'
+    list_template: 'user_order_list.html'
+    show_template: 'user_order_show.html'
+    show_widget: 'app.widgets.UserOrderShowWidget'
+  methods:

@@ -1,0 +1,42 @@
+OperationModel:
+  name: 'Work Order Model Table'
+  description: >
+  db:
+  columns:
+    operationid:
+      dargs: *mdlKWARGa000
+      oargs: ''
+    name:
+      dargs: *mdlKWARGa001
+      oargs: ''
+    uuid:
+      dargs: *mdlKWARGa002
+      oargs: ''
+OperationMaterialModel:
+  name: 'Work Order Material Model Table'
+  description: >
+  db:
+  columns:
+    operationmaterialid:
+      dargs: *mdlKWARGa000
+      oargs: ''
+    name:
+      dargs: *mdlKWARGa001
+      oargs: ''
+    uuid:
+      dargs: *mdlKWARGa002
+      oargs: ''
+OperationProcessModel:
+  name: 'Work Order Material Model Table'
+  description: >
+  db:
+  columns:
+    operationprocessid:
+      dargs: *mdlKWARGa000
+      oargs: ''
+    name:
+      dargs: *mdlKWARGa001
+      oargs: ''
+    uuid:
+      dargs: *mdlKWARGa002
+      oargs: ''

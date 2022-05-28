@@ -1,0 +1,12 @@
+'AssetModel':
+  'description':
+  'address':
+  'uuid': ['<(UUID)>', '<(UUID)>', '<(UUID)>']
+  'value':
+  'state':
+'ShareModel':
+  'description':
+  'uuid': ['<(UUID)>', '<(UUID)>', '<(UUID)>']
+  'decimal':
+  'min':
+  'state':

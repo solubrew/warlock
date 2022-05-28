@@ -1,0 +1,35 @@
+'LibraryModel':
+  'uuid': ['<(UUID)>', '<(UUID)>', '<(UUID)>']
+  'description':
+'SourceCodeModel':
+  'name':
+  'uuid': ['<(UUID)>', '<(UUID)>', '<(UUID)>']
+  'code':
+'SourceModel':
+  'username':
+  'description':
+  'uuid': ['<(UUID)>', '<(UUID)>', '<(UUID)>']
+  'refsid':
+  'publishdate':
+  'author':
+  'publishedby':
+  'title':
+  'content':
+'SourceGroupModel':
+  'username':
+  'description':
+  'uuid': ['<(UUID)>', '<(UUID)>', '<(UUID)>']
+  'refsid':
+'ReferenceModel':
+  'username':
+  'description':
+  'uuid': ['<(UUID)>', '<(UUID)>', '<(UUID)>']
+  'link':
+  'citation':
+  'sourceid':
+'ReferenceGroupModel':
+  'username':
+  'description':
+  'uuid': ['<(UUID)>', '<(UUID)>', '<(UUID)>']
+  'link':
+  'citation':

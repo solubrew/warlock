@@ -1,0 +1,206 @@
+{% extends "appbuilder/base.html" %}
+{% block content %}
+<h1>000 SetupEnvironment:</h1>
+<h4>Tools:</h4>
+<h4>Interface: </h4>
+<h5><p class="tab0">bash</p></h5>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/88LaX3QmLaA"
+frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
+picture-in-picture" allowfullscreen></iframe>
+<!--<div align="center"></div>-->
+<h6>length: 1:42</h6>
+<section>
+<h2>Setup Environment</h2>
+<h4>Description: </h4>
+	<p class="tab0">Setup Python environment using Virtualenv and Jupyter Notebook</p>
+<h4>Tags:</h4>
+	<p class="tab0">#python, #python3, #excel, #virtualenv, #office, #automate, #jupyter notebook, #linux</p>
+On debian based linux distributions the apt cmd can be used for installation<br>
+<br>
+{% for n in codelist %}
+<p class="tab0"><code>{{n}}</code></p>
+{% endfor %}
+
+
+
+<p class="tab0"><code>sudo apt install virtualenv</code></p>
+#
+<p class="tab0"><code>sudo apt install python3-pip</code></p>
+#
+<p class="tab0"><code>mkdir ENVs</code></p>
+#
+<p class="tab0"><code>mkdir ENVs/newENV</code></p>
+#
+<p class="tab0"><code>virtualenv -p /usr/bin/python3.6 ENVs/newENV</code></p>
+#
+<p class="tab0"><code>source ENVs/newENV/bin/activate</code></p>
+#
+<p class="tab0"><code>pip3 install jupyter</code></p>
+#
+<p class="tab0"><code>pip3 install openpyxl</code></p>
+</section>
+
+<h1>001 CreateWorkbook:</h1>
+  how: ipynb<br>
+
+  video:<br>
+	<br>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/88LaX3QmLaA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<br>
+	<iframe width="600" height="400" seamless frameBorder="0" scrolling="no" src="http://localhost:8888/superset/explore/?form_data=%7B%22datasource%22%3A%222__table%22%2C%22viz_type%22%3A%22treemap%22%2C%22slice_id%22%3A91%2C%22url_params%22%3A%7B%7D%2C%22granularity_sqla%22%3A%22year%22%2C%22time_range%22%3A%221960-01-01+%3A+now%22%2C%22metrics%22%3A%5B%22sum__SP_POP_TOTL%22%5D%2C%22adhoc_filters%22%3A%5B%5D%2C%22groupby%22%3A%5B%22region%22%2C%22country_code%22%5D%2C%22row_limit%22%3A50000%2C%22color_scheme%22%3A%22bnbColors%22%2C%22label_colors%22%3A%7B%7D%2C%22treemap_ratio%22%3A1.618033988749895%2C%22number_format%22%3A%22SMART_NUMBER%22%7D&standalone=true&height=400"></iframe>
+    <br>length: 2:40
+    <br>name: 001 Create Workbook
+
+<h4>description: ></h4><br>
+Create an Excel formatted spreadsheet workbook using Python<br>
+tags: [python, python3, excel, virtualenv, office, automate, jupyter notebook, linux]<br>
+<br>
+# Import Modules<br>
+<p class="tab0"><code>import os</code></p>
+<p class="tab0"><code>import openpyxl as xl</code></p>
+## Set Working Directory<br>
+<p class="tab0"><code>here = os.getcwd()</code></p>
+## Create Workbook<br>
+<p class="tab0"><code>wb = xl.Workbook()</code></p>
+## Create Worksheets<br>
+<p class="tab0"><code>sheet = wb.create_sheet(title='MySheet')</code></p>
+## Save WorkBook<br>
+<p class="tab0"><code>wb.save(filename='{0}/MyWorkbook.xlsx'.format(here))</code></p>
+###### You should now have a workbook in your working directory named NewWorkbook with a MySheet tab<br>
+<p class="tab0"><code>os.listdir(here)</code></p>
+<section>
+<h2>002_ReadWorkSheet:</h2><br>
+how:<br>
+video:<br>
+<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/88LaX3QmLaA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br>
+name: 002 Read Worksheet<br>
+<h4>description: ></h4><br>
+Read an Excel formatted spreadsheet workbook using Python<br>
+tags: [python, python3, excel, virtualenv, office, automate, jupyter notebook, linux]<br>
+### Import Modules<br>
+<p class="tab0"><code>import os</code></p>
+<p class="tab0"><code>import openpyxl as xl</code></p>
+### Set Working Directory<br>
+<p class="tab0"><code>here = os.getcwd()</code></p>
+### Open Workbook<br>
+<p class="tab0"><code>wb = xl.load_workbook('{0}/Sample.xlsx'.format(here))</code></p>
+### Load Worksheet<br>
+<p class="tab0"><code>sheet = wb['Sheet1']</code></p>
+## Read Worksheet<br>
+<p class="tab0"><code>colcnt, startrow = 0, 1</code></p>
+<p class="tab0"><code>for col in range(len(sheet[str(startrow)])):</code></p>
+<p class="tab1"><code>  lock = 0</code></p>
+<p class="tab1"><code>  colcnt += 1</code></p>
+<p class="tab1"><code>  for cval in self.sheet[getLetter(col)]:</code></p>
+<p class="tab2"><code>    if cval.row >= startrow:</code></p>
+<p class="tab3"><code>      if cval.value != None and cval.value != '-':</code></p>
+<p class="tab4"><code>          data = []</code></p>
+<p class="tab0"><code>for col in idCols:</code></p>
+<p class="tab1"><code>  names.append(self.sheet[col+str(startrow-1)].value)</code></p>
+<p class="tab1"><code>  for col in gCols:#</code></p>
+<p class="tab2"><code>    names.append(self.sheet[col+str(startrow-1)].value)#</code></p>
+<p class="tab2"><code>    names.pop(len(names)-1)</code></p>
+<p class="tab2"><code>    rcnt = 0</code></p>
+<p class="tab2"><code>    for row in range(startrow, endrow):#</code></p>
+<p class="tab3"><code>      rcnt += 1</code></p>
+<p class="tab3"><code>      for col in gCols:#</code></p>
+<p class="tab4"><code>        rdata = [self.report,]#</code></p>
+<p class="tab4"><code>        for icol in idCols:</code></p>
+<p class="tab5"><code>          rdata.append(self.sheet[icol+str(row)].value)#</code></p>
+<p class="tab5"><code>          rdata.append(self.sheet[col+str(startrow-1)].value)#</code></p>
+<p class="tab5"><code>          rdata.append(self.sheet[col+str(row)].value)#</code></p>
+<p class="tab5"><code>          data.append(rdata)#</code></p>
+<p class="tab4"><code>      self.rawdata = {'Columns': names, 'Records': data}#</code></p>
+<p class="tab0"><code>return self</code></p>
+###### And now we have a list of column names and a list of lists representing each list as a row of data<br>
+</section>
+003 FormatWorkSheets<br>
+video
+<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/88LaX3QmLaA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br>
+003 Format Worksheet<br>
+<h4>description:</h4><br>
+  Set cell colors, fonts, and borders an Excel formatted spreadsheet workbook using Python<br>
+tags: [python, python3, excel, virtualenv, office, automate, jupyter notebook, linux]<br>
+### Import Modules<br>
+<code>import os</code></p>
+<code>import openpyxl as xl</code></p>
+### Set Working Directory<br>
+<code>here = os.getcwd()</code></p>
+### Create Workbook<br>
+<code>wb = xl.create_workbook()</code></p>
+### Create Worksheets<br>
+<code>sheet = wb.create_sheet(title='Sheet1')</code></p>
+### Create Named Format<br>
+<p><code>FORMAT = {'Font': {'name': 'Calibri','size': 12,'color': 'FFFFFFFF'},</code></p>
+<p class="tab8"><code>'Fill': {'fill_type': 'solid','start_color': 'FF000000', 'end_color': 'FF000000'},</code></p>
+<p class="tab8"><code>'Border': {</code></p>
+<p class="tab9"><code>'left': {'border_style': 'thin','color': 'FF000000'},</code></p>
+<p class="tab9"><code>'right': {'border_style': 'thin','color': 'FF000000'},</code></p>
+<p class="tab9"><code>'top': {'border_style': 'thin','color': 'FF000000'},</code></p>
+<p class="tab9"><code>'bottom': {'border_style': 'thin','color': 'FF000000'},},</code></p>
+<p class="tab8"><code>'Alignment': {'wrapText': True},</code></p>
+<p class="tab8"><code>'Number': 'General',</code></p>
+<p class="tab8"><code>'Protection': {'locked': False,'hidden': False},}</code></p>
+### Apply Format<br>
+'### Save WorkBook'<br>
+<h1>004 WriteWorkSheets:</h1><br>
+  how:
+  video:
+	<br>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/88LaX3QmLaA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<br>
+
+    name: 003 Format Worksheet
+    description: >
+      Write data from a dictionary or table data structure to an excel range
+    tags: [python, python3, excel, virtualenv, office, automate, jupyter notebook, linux]
+
+'# Import Modules'
+<code>'import os</code>
+<code>'import openpyxl as xl'</code>
+'## Set Working Directory'
+<code>here = os.getcwd()</code>
+'### Create Workbook'
+### wb = xl.Workbook()
+'### Create Worksheets'
+<code>sheet1 = wb.create_sheet(title='Sheet1')</code>
+<code>sheet2 = wb.create_sheet(title='Sheet2')</code>
+'### Define Data Dictionary'
+<code>dikt = {'A1': 'Ticker', 'B1': 'Date','C1': 'Price', 'A2': 'GOOG', 'B2': '100.00',
+          'C2': '2006-01-01', 'A3': 'AMZN', 'B3': '100.00','C3': '2006-01-01',
+          'A4': 'AMD', 'B4': '100.00', 'C4': '2006-01-01', 'A5': 'DDD', 'B5': '100.00',
+          'C5': '2006-01-01'}</code>
+'### Write dictionary to worksheet'
+
+<code>
+for key, val in dikt.items():
+  sheet1[key] = val
+</code>
+
+'### Define table of data'
+
+<code>table = [
+  ['Ticker', 'Date', 'Price'],
+  ['GOOG', '100.00','2006-01-01'],
+  ['AMZN', '100.00', '2006-01-01'],
+  ['AMD', '100.00', '2006-01-01'],
+  ['DDD','100.00','2006-01-01']]</code>
+
+### Write table to worksheet
+
+<code>rownum = 1</code></p>
+<code>for row in table:</code></p>
+<code>  colnum = 1</code></p>
+<code>  for val in row:</code></p>
+<code>    sheet2.cell(column=colnum, row=rownum).value = val</code></p>
+<code>    colnum += 1</code></p>
+<code>  rownum += 1</code></p>
+'### Save workbook'<br>
+<code>name = 'Quotes'</code></p>
+<code>wb.save(filename='{0}/{1}'.format(here, name))</code></p>
+### You should now have a workbook holding two sheets<br>
+{% endblock %}

@@ -1,0 +1,26 @@
+EventModelView:
+  'self':
+    datamodel:
+      interface: *IFACEa000
+      model: 'app.models.EventModel'
+  registration:
+    class: 'app.views.EventModelView'
+    'title': 'List Event'
+    kwargs:
+      'icon': *icon0
+      'category': 'Calendar'
+      'category_icon': *icon1
+  viewtype: *VIEWa001
+ResourceModelView:
+  'self':
+    datamodel:
+      interface: *IFACEa000
+      model: 'app.models.ResourceModel'
+  registration:
+    class: 'app.views.ResourceModelView'
+    'title': 'List Event Resource'
+    kwargs:
+      'icon': *icon0
+      'category': 'Calendar'
+      'category_icon': *icon1
+  viewtype: *VIEWa001

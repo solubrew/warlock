@@ -1,0 +1,90 @@
+InventoryItemModel:
+  name: 'Inventory Item Model Table'
+  description: >
+  db:
+  columns:
+    inventoryitemid:
+      dargs: *mdlKWARGa000
+      oargs: ''
+    name:
+      dargs: *mdlKWARGa001
+      oargs: ''
+    uuid:
+      dargs: *mdlKWARGa002
+      oargs: ''
+InventoryParcelModel:
+  name: 'Inventory Parcel Model Table'
+  description: >
+  db:
+  columns:
+    inventoryparcelid:
+      dargs: *mdlKWARGa000
+      oargs: ''
+    name:
+      dargs: *mdlKWARGa001
+      oargs: ''
+    uuid:
+      dargs: *mdlKWARGa002
+      oargs: ''
+InventoryQuantityModel:
+  name: 'Inventory Quantity Model Table'
+  description: >
+  db:
+  columns:
+    inventoryquantityid:
+      dargs: *mdlKWARGa000
+      oargs: ''
+    name:
+      dargs: *mdlKWARGa001
+      oargs: ''
+    uuid:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    inventoryitemid:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    parcelqty:
+      description: >
+        initial quantity value of item as entered into the inventory system
+      dargs: *mdlKWARGa002
+      oargs: ''
+    availableqty:
+      description: >
+        quantity of parcel avialable for unrestricted use
+      dargs: *mdlKWARGa002
+      oargs: ''
+    allocatedqty:
+      description: >
+        quantity of parcel allocated for use or restriction
+      dargs: *mdlKWARGa002
+      oargs: ''
+    distributedqty:
+      description: >
+        quantity of parcel distributed for consumption at point of use
+      dargs: *mdlKWARGa002
+      oargs: ''
+    consumedqty:
+      description: >
+        quantity of parcel consumed through process
+      dargs: *mdlKWARGa002
+      oargs: ''
+InventoryLocationModel:
+  name: 'Inventory Location Model Table'
+  description: >
+  db:
+  columns:
+    inventoryitemlocationid:
+      dargs: *mdlKWARGa000
+      oargs: ''
+    inventoryparcelid:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    name:
+      dargs: *mdlKWARGa001
+      oargs: ''
+    uuid:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    lociid:
+      dargs: *mdlKWARGa002
+      oargs: ''

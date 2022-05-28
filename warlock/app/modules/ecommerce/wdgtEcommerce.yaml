@@ -1,0 +1,6 @@
+CartShowWidget:
+  'object': 'flask_appbuilder.widgets.ShowWidget'
+  'template': 'widgets/ecommerce_show.html'
+OrderShowWidget:
+UserCartShowWidget:
+UserOrderShowWidget:

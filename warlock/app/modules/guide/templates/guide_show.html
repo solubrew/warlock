@@ -1,0 +1,23 @@
+{% extends "appbuilder/base.html" %} {% block content %} <h1>{% seq_title %}:</h1> <h4>Tools:</h4> <h4>Interface: </h4> <h5><p class="tab0">bash</p></h5> <iframe width="560" height="315" src="{% video_url %}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!--<div align="center"></div>--> <h6>length: {% video_length %}</h6> <section> <h2>{% title %}</h2> <h4>Description: </h4>
+  <p class="tab0"{% description %}</p>
+<h4>Tags:</h4>
+  <p class="tab0">{% tags %}</p>
+<br> <br>
+for codeline in code
+  <p class="tab0"><code>{% line %}</code></p>
+  #
+
+<script> function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+} document.getElementById("defaultOpen").click(); </script>
+</section> {% endblock %}

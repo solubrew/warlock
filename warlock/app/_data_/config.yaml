@@ -1,0 +1,178 @@
+---
+<(META)>:
+  docid:
+  name: 'Warlock Flask Site Configuration YAML Document'
+  description: >
+    Configure Active Modules, Languages, Roles, Themes and Site Environmental
+    variables for current site
+  expirary: '<[expiration]>'
+  version: '<[version]>'
+  path: '<[LEXIvrs]>beaver/ngynFalsk/models.yaml'
+  outline: '<[outline]>'
+  authority: 'document|this'
+  security: 'sec|lvl2'
+  <(WT)>: -32
+modules: #<(INCL:.OPs)>/opSERFs/3_Work/jobInternalDataServices/
+  'account':
+    description: >
+      Account module connects site system user accounts with other user based data
+      such as contact info, payment info, order info, communication info, etc
+    'active': 1
+  'admin':
+    description: >
+      Admin module provides interfaces for managing the site and data controlled
+      by the site
+    'active': 1
+  'article':
+    description: >
+      Article module stores article data in text format
+    'active': 1
+  'asset':
+    description: >
+      Asset module
+    'active': 1
+  'calendar':
+    description: >
+      Calendar module
+    'active': 1
+  'catalog':
+    description: >
+      Catalog module
+    'active': 1
+  'dataset':
+    description: >
+      Dataset module
+    'active': 1
+  'ecommerce':
+    description: >
+      ECommerce module
+    'active': 1
+  'graphics':
+    'description': >
+    'active': 1
+  'guide':
+    description: >
+      Guide module
+    'active': 1
+  'inventory':
+    description: >
+      Inventory module
+    'active': 1
+  'library':
+    description: >
+      Library module
+    'active': 1
+  'location':
+    description: >
+      Loci module
+    'active': 1
+  'operations':
+    description: >
+      Workorder module
+    'active': 1
+  'presearch':
+    'description': >
+    'active': 1
+  'reports':
+    description: >
+      Report module
+    'active': 1
+LANGUAGES: &langs
+  "en":
+    "flag": "gb"
+    "name": "English"
+  "pt":
+    "flag": "pt"
+    "name": "Portuguese"
+  "pt_BR":
+    "flag": "br"
+    "name": "Pt Brazil"
+  "es":
+    "flag": "es"
+    "name": "Spanish"
+  "de":
+    "flag": "de"
+    "name": "German"
+  "zh":
+    "flag": "cn"
+    "name": "Chinese"
+  "ru":
+    "flag": "ru"
+    "name": "Russian"
+  "pl":
+    "flag": "pl"
+    "name": "Polish"
+ROLES:
+  "Member": &member
+    - [".*", "can_list"]
+    - [".*", "can_show"]
+    - [".*", "menu_access"]
+    - [".*", "can_get"]
+    - [".*", "can_info"]
+  "Public": &public
+    - [".*", "can_list"]
+    - [".*", "can_show"]
+    - [".*", "menu_access"]
+    - [".*", "can_get"]
+    - [".*", "can_info"]
+  "Reader": &reader
+    - [".*", "can_list"]
+    - [".*", "can_show"]
+    - [".*", "menu_access"]
+    - [".*", "can_get"]
+    - [".*", "can_info"]
+  "Super": &super
+    - [".*", "can_list"]
+    - [".*", "can_show"]
+    - [".*", "menu_access"]
+    - [".*", "can_get"]
+    - [".*", "can_info"]
+  "Tester": &tester
+    - [".*", "can_list"]
+    - [".*", "can_show"]
+    - [".*", "menu_access"]
+    - [".*", "can_get"]
+    - [".*", "can_info"]
+THEMES:
+  - "admin.css"
+  - "dark.css"
+  - "light.css"
+'ENVS':
+  APP_NAME: "sb-intra"
+  APP_ICON: "<[here]>static/img/logo.jpg"
+  APP_THEME: 'bootstrap-theme.css'
+  AUTH_TYPE: 'flask_appbuilder.security.manager.AUTH_DB'
+  AUTH_ROLE_ADMIN: 'Admin'
+  AUTH_ROLE_PUBLIC: 'Public'
+  AUTH_USER_REGISTRATION: true
+  AUTH_USER_REGISTRATION_ROLE: "Public"
+  BABEL_DEFAULT_LOCALE: "en"
+  BABEL_DEFAULT_FOLDER: "translations"
+  CSRF_ENABLED: true
+  db:
+    sqlite:
+      SQLALCHEMY_DATABASE_URI: "sqlite:///<[app_path]>/app.db"
+    mysql:
+      SQLALCHEMY_DATABASE_URI: 'mysql://<[site]>@M[host]>/<[site]>'
+    pgs:
+      SQLALCHEMY_DATABASE_URI: 'postgresql://<[user]>:<[pword]>@<[host]>/<[site]>'
+  FAB_ROLES:
+    "ReadOnly":
+   	"Public":
+   	"Super":
+   	"Member":
+  	"Tester":
+  FLASK_APP:
+  FLASK_ENV:
+  LANGUAGES: 'langs'
+  UPLOAD_FOLDER: "<[here]>app/static/uploads/"
+  IMG_SIZE: [300, 200, true]
+  IMG_UPLOAD_FOLDER: "<[here]>app/static/uploads/"
+  IMG_UPLOAD_URL: "/static/uploads/"
+  RECAPTCHA_USE_SSL: false
+  RECAPTCHA_PUBLIC_KEY: 'public'
+  RECAPTCHA_PRIVATE_KEY: 'private'
+  RECAPTCHA_OPTIONS:
+    'theme': 'white'
+  SESSION_TYPE:
+  SESSION_REDIS:

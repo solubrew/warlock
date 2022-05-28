@@ -1,0 +1,14 @@
+AdminDashboardModelView:
+  'self':
+    datamodel:
+      interface: *IFACEa000
+      model: 'app.models.AdminDashboardModel'
+  registration:
+    class: 'app.views.AdminDashboardModelView'
+    'title': 'List User'
+    kwargs:
+      'icon': *icon0
+      'category': 'Admin'
+      'category_icon': *icon1
+  viewtype: *VIEWa001
+  templtates:

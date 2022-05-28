@@ -1,0 +1,20 @@
+'InventoryItemModel':
+  'name':
+  'uuid': ['<(UUID)>', '<(UUID)>', '<(UUID)>']
+'InventoryParcelModel':
+  'name':
+  'uuid': ['<(UUID)>', '<(UUID)>', '<(UUID)>']
+'InventoryQuantityModel':
+  'name':
+  'uuid': ['<(UUID)>', '<(UUID)>', '<(UUID)>']
+  'inventoryitemid':
+  'parcelqty':
+  'availableqty':
+  'allocatedqty':
+  'distributedqty':
+  'consumedqty':
+'InventoryLocationModel':
+  'inventoryparcelid':
+  'name':
+  'uuid': ['<(UUID)>', '<(UUID)>', '<(UUID)>']
+  'locationid':

@@ -1,0 +1,50 @@
+AssetModel:
+  description: >
+    'An Asset represents an quantized item of value'
+  db:
+  columns:
+    assetid:
+      dargs: *mdlKWARGa000
+      oargs: ''
+    description:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    address:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    uuid:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    value:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    state:
+      dargs: *mdlKWARGa002
+      oargs:
+        size: 10
+ShareModel:
+  description: >
+    'A Share represents a portion of an asset'
+  db:
+  columns:
+    shareid:
+      dargs: *mdlKWARGa000
+      oargs: ''
+    description:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    uuid:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    decimal:
+      dargs: *mdlKWARGa004
+      oargs:
+        size: 1.0
+    min:
+      dargs: *mdlKWARGa004
+      oargs:
+        default: 0.000000000000000001
+    state:
+      dargs: *mdlKWARGa002
+      oargs:
+        size: 10

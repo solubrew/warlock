@@ -1,0 +1,22 @@
+<!--
+{{ valuecolumns.embedframe }}
+<h6>length: 1:42</h6>
+<section>
+<h2>Setup Environment</h2>
+
+{% extends "appbuilder/base.html" %}
+{% block content %}
+	{{ super() }}
+{% endblock %}
+{% import "../_base/templates/macros.html" as macros %}
+{% block content %}
+
+<h4>Description: </h4>
+	<p class="tab0">Setup Python environment using Virtualenv and Jupyter Notebook</p>
+<h4>Tags:</h4>
+	<p class="tab0">#python, #python3, #excel, #virtualenv, #office, #automate, #jupyter notebook, #linux</p>
+On debian based linux distributions the apt cmd can be used for installation<br>
+<br>
+{% for n in codelist %}
+	<p class="tab0"><code>{{ n }}</code></p>
+{% endfor %} -->

@@ -1,0 +1,132 @@
+LibraryModel:
+  name: 'Library Model Table'
+  description: >
+  db:
+  columns:
+    libraryid:
+      dargs: *mdlKWARGa000
+      oargs: ''
+    uuid:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    description:
+      dargs: *mdlKWARGa002
+      oargs: ''
+SourceCodeModel:
+  name: 'Source Code Table Model'
+  description:
+  db:
+  columns:
+    sourcecodeid:
+      dargs: *mdlKWARGa000
+      oargs: ''
+    name:
+      dargs: *mdlKWARGa001
+      oargs: ''
+    code:
+      dargs: *mdlKWARGa002
+      oargs: ''
+SourceModel:
+  name: 'Source Model Table'
+  description: >
+  db:
+  columns:
+    sourceid:
+      dargs: *mdlKWARGa000
+      oargs: ''
+    username:
+      dargs: *mdlKWARGa001
+      oargs: ''
+    description:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    uuid:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    refsid:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    publishdate:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    author:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    publishedby:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    title:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    content:
+      dargs: *mdlKWARGa002
+      oargs: ''
+SourceGroupModel:
+  name: 'Source Group Model Table'
+  description: >
+  db:
+  columns:
+    sourcegroupid:
+      dargs: *mdlKWARGa000
+      oargs: ''
+    username:
+      dargs: *mdlKWARGa001
+      oargs: ''
+    description:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    uuid:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    refsid:
+      dargs: *mdlKWARGa002
+      oargs: ''
+ReferenceModel:
+  name: 'Reference Model Table'
+  description: >
+  db:
+  columns:
+    referenceid:
+      dargs: *mdlKWARGa000
+      oargs: ''
+    username:
+      dargs: *mdlKWARGa001
+      oargs: ''
+    description:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    uuid:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    link:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    citation:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    sourceid:
+      dargs: *mdlKWARGa002
+      oargs: ''
+ReferenceGroupModel:
+  name: 'Reference Group Model Table'
+  description: >
+  db:
+  columns:
+    referenceid:
+      dargs: *mdlKWARGa000
+      oargs: ''
+    username:
+      dargs: *mdlKWARGa001
+      oargs: ''
+    description:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    uuid:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    link:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    citation:
+      dargs: *mdlKWARGa002
+      oargs: ''

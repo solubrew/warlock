@@ -1,0 +1,6 @@
+cancelled:
+  route: '/cancelled'
+  template: 'cancelled.html'
+success:
+  route: '/success'
+  template: 'success.html'

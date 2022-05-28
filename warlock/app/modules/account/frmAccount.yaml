@@ -1,0 +1,74 @@
+CreditForm:
+  formUUID:
+  description: >
+RegistrationForm:
+  formUUID:
+  description: >
+    Sign up for a user account.
+  fields:
+    email:
+      object: wtforms.StringField
+      dargs:
+        'Email'
+      vargs:
+        -
+          object: wtforms.validators.Email
+          dargs:
+            message: 'Not a valid email address.'
+        -
+          object: wtforms.validators.DataRequired
+          dargs:
+    password:
+      object: wtforms.PasswordField
+      dargs:
+        'Password':
+      vargs:
+          -
+            object: wtforms.validators.DataRequired
+            dargs:
+              message: "Please enter a password."
+    confirmPassword:
+      object: wtforms.PasswordField
+      dargs:
+        'Repeat Password':
+      vargs:
+        -
+          object: wtforms.validators.EqualTo
+          dargs:
+            password:
+            message: 'Passwords must match.'
+    title:
+      object: wtforms.SelectField
+      dargs:
+        'Title':
+
+        choices:
+          - ['Farmer', 'farmer']
+          - ['Corrupt Politician', 'politician']
+          - ['No-nonsense City Cop', 'cop']
+          - ['Professional Rocket League Player', 'rocket']
+          - ['Lonely Guy At A Diner', 'lonely']
+          - ['Pokemon Trainer', 'pokemon']
+      vargs:
+        -
+          object: wtforms.validators.DataRequired
+    website:
+      object: wtforms.StringField
+      dargs:
+        'Website'
+      vargs:
+        - URL
+    birthday:
+      object: wtforms.DateField
+      dargs:
+        'Your Birthday'
+      vargs:
+    recaptcha:
+      object: flask_wtf.RecaptchaField
+      dargs:
+      vargs:
+    submit:
+      object: wtforms.SubmitField
+      dargs:
+        'Submit'
+      vargs:

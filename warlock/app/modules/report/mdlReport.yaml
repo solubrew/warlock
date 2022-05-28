@@ -1,0 +1,14 @@
+ReportsModel:
+  name: 'Reports Model Table'
+  description: >
+  db:
+  columns:
+    reportsid:
+      dargs: *mdlKWARGa000
+      oargs: ''
+    name:
+      dargs: *mdlKWARGa001
+      oargs: ''
+    uuid:
+      dargs: *mdlKWARGa002
+      oargs: ''

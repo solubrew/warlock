@@ -1,0 +1,27 @@
+'cart_add.html':
+  document:
+    jinja: >
+'cart_list.html':
+  document:
+    jinja: >
+'user_cart_list.html':
+  document:
+    jinja: >
+'user_cart_add.html':
+  document:
+    jinja: >
+'user_cart_show.html':
+  document:
+    jinja: >
+'cart.html':
+  document:
+    jinja: >
+'checkout.html':
+  document:
+    jinja: >
+'invoice.html':
+  document:
+    jinja: >
+'payment_account_add.html':
+  document:
+    jinja: >

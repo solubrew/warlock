@@ -1,0 +1,11 @@
+{% extends "appbuilder/base.html" %} {% block content %} <h1>{{ seq_title }}:</h1> <h4>Tools: {{ tools }}</h4> <h4>Interface: </h4><h5>{{ interface }}</h5> <iframe width="560" height="315" src="{{ video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!--<div align="center"></div>--> <h6>length: {{ length }}</h6> <section> <h2>{{ title }}</h2> <h4>Description: </h4>
+  <p class="tab0">{{description}}</p>
+<h4>Tags:</h4>
+  <p class="tab0">{{tags}}</p>
+{% for line in text %}
+  {% if line.type = "markdown" %}
+    {{ text }}<br>
+  {% else %}
+    <p class="tab0"><code>{{ line.text }}</code></p>
+  {% endif %}
+{% endfor %} </section> {% endblock %}

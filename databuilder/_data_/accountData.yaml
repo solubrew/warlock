@@ -1,0 +1,53 @@
+---
+'AccountModel':
+  'name': ['checking', 'checking', 'checking', 'savings', 'savings', 'savings']
+  'description': ['', '', '']
+  'uuid': ['<(UUID)>', '<(UUID)>', '<(UUID)>']
+  'state': ['active', 'active', 'active']
+'UserModel':
+  'username': ['solubrew', 'kodak', 'raven']
+  'description': ['alpha test account', 'alpha test account', 'alpha test account']
+  'uuid': ['<(UUID)>', '<(UUID)>', '<(UUID)>']
+  'first_name': ['Joe', 'Cameron', 'Staci']
+  'last_name': ['Brewer', 'Geary', 'Hillberry']
+  'avatar': ['/path/to/image/file.png', '/path/to/image/file.png', '/path/to/image/file.png']
+  'state': ['active', 'active', 'active']
+  'pword': [dev, kdev, rdev]
+'UserGroupModel':
+  'name': ['']
+  'description': []
+  'uuid': ['<(UUID)>', '<(UUID)>', '<(UUID)>']
+  'state': []
+'UserGroupsModel':
+  'userid':
+  'usergroupid':
+'UserAccountModel':
+  'name': []
+  'description': []
+  'uuid': ['<(UUID)>', '<(UUID)>', '<(UUID)>']
+  'state': []
+'UserAddressModel':
+  'name': []
+  'description': []
+  'uuid': ['<(UUID)>', '<(UUID)>', '<(UUID)>']
+  'state': []
+'UserPhoneModel':
+  'name': []
+  'description': []
+  'uuid': ['<(UUID)>', '<(UUID)>', '<(UUID)>']
+  'state': []
+'UserEmailModel':
+  'name': []
+  'description': []
+  'uuid': ['<(UUID)>', '<(UUID)>', '<(UUID)>']
+  'state': []
+'GenderModel':
+  'name': []
+  'description': []
+  'uuid': ['<(UUID)>', '<(UUID)>', '<(UUID)>']
+  'state': []
+'PaymentMethodsModel':
+  'name': []
+  'description': []
+  'uuid': ['<(UUID)>', '<(UUID)>', '<(UUID)>']
+  'state': []

@@ -1,0 +1,14 @@
+PreSearchModelView:
+  'self':
+    datamodel:
+      interface: *IFACEa000
+      model: 'app.models.PreSearchModel'
+  registration:
+    class: 'app.views.PreSearchModelView'
+    'title': 'List Pre-Search Blog'
+    kwargs:
+      'icon': *icon0
+      'category': 'Blog'
+      'category_icon': *icon1
+  viewtype: *VIEWa001
+  templates:

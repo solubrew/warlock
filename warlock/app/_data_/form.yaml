@@ -1,0 +1,18 @@
+GraphicViews:
+  account: <(INCL)>/account/frmAccount.yaml
+  admin: <(INCL)>modules/admin/frmAdmin.yaml
+  article: <(INCL)>modules/article/frmArticle.yaml
+  asset: <(INCL)>modules/asset/frmAsset.yaml
+  calendar: <(INCL)>modules/calendar/frmCalendar.yaml
+  catalog: <(INCL)>modules/catalog/frmCatalog.yaml
+  dataset: <(INCL)>modules/dataset/frmDataset.yaml
+  ecommerce: <(INCL)>modules/ecommerce/frmECommerce.yaml
+  graphics:
+  guide: <(INCL)>modules/guide/frmGuide.yaml
+  inventory: <(INCL)>modules/inventory/frmInventory.yaml
+  library: <(INCL)>modules/library/frmLibrary.yaml
+  location: <(INCL)>modules/loci/frmLocation.yaml
+  operations: <(INCL)>modules/operations/frmOperations.yaml
+  presearch:
+  projects:
+  reports:

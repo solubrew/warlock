@@ -1,0 +1,19 @@
+LocationModel:
+  'uuid': ['<(UUID)>', '<(UUID)>', '<(UUID)>']
+  'code':
+  'description':
+  'country':
+  'state':
+  'district':
+  'county':
+  'city':
+  'municipality':
+  'area':
+  'zone':
+  'spot':
+  'building':
+  'triname':
+  'sector':
+  'longitude':
+  'latitude':
+  'street':

@@ -1,0 +1,41 @@
+BridgeModel:
+  name: 'Bridge Model Table'
+  description: >
+    bridge database creation function to create associated folder structures with
+    the addition of new instances of models within each module
+    need to figure out how to minimize the module level code for this
+  db:
+  columns:
+    bridgeid:
+      dargs: *mdlKWARGa000
+      oargs: ''
+    'name':
+      dargs: *mdlKWARGa002
+      oargs: ''
+    description:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    uuid:
+      dargs: *mdlKWARGa002
+      oargs: ''
+FSBridgeModel:
+  name: 'File System Bridge Model Table'
+  description: >
+    Table of Root File System Paths
+  db:
+  columns:
+    'fsbridgeid':
+      dargs: *mdlKWARGa000
+      oargs: ''
+    'name':
+      dargs: *mdlKWARGa002
+      oargs: ''
+    description:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    uuid:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    'homedir':
+      dargs: *mdlKWARGa002
+      oargs: ''

@@ -1,0 +1,95 @@
+TradeEntryModel:
+  name: 'Trade Entry Model Table'
+  description: >
+  db:
+  columns:
+    tradeentryid:
+      dargs: *mdlKWARGa000
+      oargs:
+    activationdate:
+      dargs: *mdlKWARGa000
+      oargs:
+    deactivateiondate:
+      dargs: *mdlKWARGa000
+      oargs:
+    debitassetid:
+      dargs: *mdlKWARGa000
+      oargs:
+    debitunits:
+      dargs: *mdlKWARGa000
+      oargs:
+    debitvalue:
+      dargs: *mdlKWARGa000
+      oargs:
+    creditassetid:
+      dargs: *mdlKWARGa000
+      oargs:
+    creditunits:
+      dargs: *mdlKWARGa000
+      oargs:
+    creditvalue:
+      dargs: *mdlKWARGa000
+      oargs:
+    baseunit:
+      dargs: *mdlKWARGa000
+      oargs:
+TradeCompletionModel:
+  name: 'Trade Completion Model Table'
+  description: >
+  db:
+  columns:
+    tradecompletionid:
+      dargs: *mdlKWARGa000
+      oargs:
+    debitassetid:
+      dargs: *mdlKWARGa000
+      oargs:
+    completiondate:
+      dargs: *mdlKWARGa000
+      oargs:
+    debitunits:
+      dargs: *mdlKWARGa000
+      oargs:
+    debitvalue:
+      dargs: *mdlKWARGa000
+      oargs:
+    creditassetid:
+      dargs: *mdlKWARGa000
+      oargs:
+    creditunits:
+      dargs: *mdlKWARGa000
+      oargs:
+    creditvalue:
+      dargs: *mdlKWARGa000
+      oargs:
+AssetPortfolioModel:
+  name: 'Asset Portfolio Model Table'
+  description: >
+  db:
+  columns:
+    assetportfolioid:
+      dargs: *mdlKWARGa000
+      oargs:
+    assetid:
+    tradecompletionid:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+c

@@ -1,0 +1,97 @@
+UserModelView:
+  self:
+    datamodel:
+      interface: *IFACEa000
+      model: 'app.models.UserModel'
+    # list_columns: ['username', 'description', 'uuid', 'first_name',
+    #                 'last_name', 'avatar']
+    # add_columns: ['username', 'description', 'uuid', 'first_name',
+    #                 'last_name', 'avatar']
+    # edit_columns: ['username', 'description', 'uuid', 'first_name',
+    #                 'last_name', 'avatar', 'state']
+    # related_views:
+    # add_template: '../modules/account/tempaltes/user_add.html'
+    # show_template: '../modules/account/templates/user_show.html'
+    # edit_template: '../modules/account/templates/user_edit.html'
+  registration:
+    class: 'app.views.UserModelView'
+    'title': 'List User'
+    kwargs:
+      'icon': *icon0
+      'category': 'User'
+      'category_icon': *icon1
+  viewtype: *VIEWa001
+UserGroupModelView:
+  self:
+    add_columns:
+    add_template:
+    datamodel:
+      interface: *IFACEa000
+      model: 'app.models.UserGroupModel'
+    edit_columns:
+    edit_template:
+    list_columns:
+    list_template:
+    related_views: 'UserModelView'
+    show_columns:
+    show_template:
+  registration:
+    class: 'app.views.UserGroupModelView'
+    'title': 'List User Groups'
+    kwargs:
+      'icon': *icon0
+      'category': 'User'
+      'category_icon': *icon1
+  viewtype: *VIEWa001
+UserAccountModelView:
+  'self':
+    datamodel:
+      interface: *IFACEa000
+      model: 'app.models.UserAccountModel'
+  registration:
+    class: 'app.views.UserAccountModelView'
+    'title': 'List Account'
+    kwargs:
+      'icon': *icon0
+      'category': 'User'
+      'category_icon': *icon1
+  viewtype: *VIEWa001
+UserAddressModelView:
+  'self':
+    datamodel:
+      interface: *IFACEa000
+      model: 'app.models.UserAddressModel'
+  registration:
+    class: 'app.views.UserAddressModelView'
+    'title': 'List User Address'
+    kwargs:
+      'icon': *icon0
+      'category': 'User'
+      'category_icon': *icon1
+  viewtype: *VIEWa001
+UserPhoneModelView:
+  'self':
+    datamodel:
+      interface: *IFACEa000
+      model: 'app.models.UserPhoneModel'
+  registration:
+    class: 'app.views.UserPhoneModelView'
+    'title': 'List User Phone'
+    kwargs:
+      'icon': *icon0
+      'category': 'User'
+      'category_icon': *icon1
+  viewtype: *VIEWa001
+UserEmailModelView:
+  'self':
+    datamodel:
+      interface: *IFACEa000
+      model: 'app.models.UserEmailModel'
+  registration:
+    class: 'app.views.UserEmailModelView'
+    'title': 'List User Email'
+    kwargs:
+      'icon': *icon0
+      'category': 'User'
+      'category_icon': *icon1
+  viewtype: *VIEWa001

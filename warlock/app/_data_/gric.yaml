@@ -1,0 +1,29 @@
+
+
+
+
+
+
+
+
+
+
+
+GraphicViews:
+  account: <(INCL)>/account/gricAccount.yaml
+  admin: <(INCL)>modules/admin/gricAdmin.yaml
+  article: <(INCL)>modules/article/gricArticle.yaml
+  asset: <(INCL)>modules/asset/gricAsset.yaml
+  calendar: <(INCL)>modules/calendar/gricCalendar.yaml
+  catalog: <(INCL)>modules/catalog/gricCatalog.yaml
+  dataset: <(INCL)>modules/dataset/gricDataset.yaml
+  ecommerce: <(INCL)>modules/ecommerce/gricECommerce.yaml
+  graphics:
+  guide: <(INCL)>modules/guide/gricGuide.yaml
+  inventory: <(INCL)>modules/inventory/gricInventory.yaml
+  library: <(INCL)>modules/library/gricLibrary.yaml
+  location: <(INCL)>modules/loci/gricLocation.yaml
+  operations: <(INCL)>modules/operations/gricOperations.yaml
+  presearch:
+  projects:
+  reports:

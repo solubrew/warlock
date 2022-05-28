@@ -1,0 +1,15 @@
+AdminDashboardModel:
+  name: 'Administration Dashboard Model Table'
+  description: >
+  db:
+  columns:
+    admindashboardid:
+      dargs: *mdlKWARGa000
+      oargs: ''
+    description:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    state:
+      dargs: *mdlKWARGa002
+      oargs:
+        size: 10

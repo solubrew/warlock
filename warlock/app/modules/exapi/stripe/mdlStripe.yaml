@@ -1,0 +1,45 @@
+StripeCustomerModel:
+  name: 'Stripe Customer Table Model'
+  description: >
+    Connect to id of customer in stripe system
+  db:
+  columns:
+    stripecustomerid:
+      dargs: *mdlKWARGa000
+      oargs: ''
+    uuid:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    instripecustomerid:
+      dargs: *mdlKWARGa002
+      oargs:
+StripeInvoiceModel:
+  name: 'Stripe Invoice Table Model'
+  description: >
+    Connect to id of invoice in stripe system
+  db:
+  columns:
+    stripeinvoiceid:
+      dargs: *mdlKWARGa000
+      oargs: ''
+    uuid:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    instripeinvoiceid:
+      dargs: *mdlKWARGa002
+      oargs:
+StripeItemModel:
+  name: 'Stripe Item Table Model'
+  description: >
+    Connect to id of item in stripe system
+  db:
+  columns:
+    stripeitemid:
+      dargs: *mdlKWARGa000
+      oargs: ''
+    uuid:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    instripeitemid:
+      dargs: *mdlKWARGa002
+      oargs:

@@ -1,0 +1,62 @@
+LocationModel:
+  name: 'Location Model Table'
+  description: >
+  db:
+  columns:
+    lociid:
+      dargs: *mdlKWARGa000
+      oargs: ''
+    uuid:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    code:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    description:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    country:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    state:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    district:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    county:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    city:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    municipality:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    area:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    zone:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    spot:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    building:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    triname:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    sector:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    longitude:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    latitude:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    street:
+      dargs: *mdlKWARGa002
+      oargs: ''

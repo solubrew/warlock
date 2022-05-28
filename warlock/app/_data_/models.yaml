@@ -1,0 +1,82 @@
+---
+kwargs:
+  mdlKWARGa000: &mdlKWARGa000
+    type: 'sqlalchemy.Integer'
+    size:
+    roles: ['admin', 'dev']
+    kwargs:
+      primary_key: true
+      unique: true
+      nullable: false
+  mdlKWARGa001: &mdlKWARGa001
+    type: 'sqlalchemy.String'
+    size: 50
+    roles: ['admin', 'dev']
+    kwargs:
+      primary_key: false
+      unique: true
+      nullable: false
+  mdlKWARGa002: &mdlKWARGa002
+    type: 'sqlalchemy.String'
+    size: 250
+    roles: ['admin', 'dev']
+    kwargs:
+      primary_key: false
+      unique: false
+      nullable: true
+  mdlKWARGa003: &mdlKWARGa003
+    type: 'sqlalchemy.Integer'
+    size:
+    roles: ['admin', 'dev']
+    kwargs:
+      primary_key: false
+      unique: false
+      nullable: true
+  mdlKWARGa004: &mdlKWARGa004
+    type: 'sqlalchemy.Float'
+    size:
+    roles: ['admin', 'dev']
+    kwargs:
+      primary_key: false
+      unique: false
+      nullable: true
+  mdlKWARGa005: &mdlKWARGa005
+    type: 'sqlalchemy.Date'
+    size:
+    roles: ['admin', 'dev']
+    kwargs:
+      primary_key: false
+      unique: false
+      nullable: true
+  mdlKWARGa006: &mdlKWARGa006
+    type: 'flask_appbuilder.models.mixins.ImageColumn'
+    size:
+    roles: ['admin', 'dev']
+    kwargs:
+      size: [300,300,true]
+      thumbnail_size: [30,30,True]
+  mdlKWARGa007: &mdlKWARGa007
+    type: 'sqlalchemy.String'
+    size: 2500
+    roles: ['admin', 'dev']
+    kwargs:
+      primary_key: false
+      unique: false
+      nullable: true
+models:
+  account: <(INCL)>../modules/account/mdlAccount.yaml
+  admin: <(INCL)>../modules/admin/mdlAdmin.yaml
+  article: <(INCL)>../modules/article/mdlArticle.yaml
+  asset: <(INCL)>../modules/asset/mdlAsset.yaml
+  calendar: <(INCL)>../modules/calendar/mdlCalendar.yaml
+  catalog: <(INCL)>../modules/catalog/mdlCatalog.yaml
+  dataset: <(INCL)>../modules/dataset/mdlDataset.yaml
+  ecommerce: <(INCL)>../modules/ecommerce/mdlEcommerce.yaml
+  guide: <(INCL)>../modules/guide/mdlGuide.yaml
+  inventory: <(INCL)>../modules/inventory/mdlInventory.yaml
+  library: <(INCL)>../modules/library/mdlLibrary.yaml
+  location: <(INCL)>../modules/location/mdlLocation.yaml
+  operations: <(INCL)>../modules/operation/mdlOperation.yaml
+  presearch:
+  projects:
+  reports:

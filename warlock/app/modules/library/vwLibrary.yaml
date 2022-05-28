@@ -1,0 +1,34 @@
+SourceModelView:
+  'self':
+    datamodel:
+      interface: *IFACEa000
+      model: 'app.models.SourceModel'
+  registration:
+    class: app.views.SourceModelView
+    'title': 'List Source'
+    kwargs:
+      'icon': *icon0
+      'category': 'Library'
+      'category_icon': *icon1
+  viewtype: *VIEWa001
+  templtates:
+    source_add
+    source_edit
+    source_view
+ReferenceModelView:
+  'self':
+    datamodel:
+      interface: *IFACEa000
+      model: 'app.models.ReferenceModel'
+  registration:
+    class: app.views.ReferenceModelView
+    'title': 'List Reference'
+    kwargs:
+      'icon': *icon0
+      'category': 'Library'
+      'category_icon': *icon1
+  viewtype: *VIEWa001
+  templtates:
+    reference_add
+    reference_edit
+    reference_view

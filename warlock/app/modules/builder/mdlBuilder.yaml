@@ -1,0 +1,11 @@
+ModulesModel:
+  name: 'Catalog Table Model'
+  description: >
+  db:
+  columns:
+    moduleid:
+      dargs: *mdlKWARGa000
+      oargs: ''
+    name:
+      dargs: *mdlKWARGa001
+      oargs: ''

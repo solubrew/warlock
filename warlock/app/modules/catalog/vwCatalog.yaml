@@ -1,0 +1,119 @@
+CatalogModelView:
+  'self':
+    datamodel:
+      interface: *IFACEa000
+      model: 'app.models.CatalogModel'
+  registration:
+    class: app.views.CatalogModelView
+    kwargs:
+      'icon': *icon0
+      'category': 'Catalog'
+      'category_icon': *icon1
+    'title': 'List Catalog'
+  viewtype: *VIEWa001
+  templtates:
+    catalog_add
+    catalog_edit
+    catalog_view
+ProductDigitalModelView:
+  'self':
+    datamodel:
+      interface: *IFACEa000
+      model: 'app.models.ProductDigitalModel'
+  registration:
+    class: app.views.ProductDigitalModelView
+    'title': 'List Product'
+    kwargs:
+      'icon': *icon0
+      'category': 'Catalog'
+      'category_icon': *icon1
+  viewtype: *VIEWa001
+  templtates:
+    product_add
+    product_edit
+    product_view
+ProductPhysicalModelView:
+  'self':
+    datamodel:
+      interface: *IFACEa000
+      model: 'app.models.ProductPhysicalModel'
+  registration:
+    class: app.views.ProductPhysicalModelView
+    'title': 'List Product'
+    kwargs:
+      'icon': *icon0
+      'category': 'Catalog'
+      'category_icon': *icon1
+  viewtype: *VIEWa001
+  templtates:
+    product_add
+    product_edit
+    product_view
+SpecModelView:
+  'self':
+    datamodel:
+      interface: *IFACEa000
+      model: 'app.models.SpecModel'
+  registration:
+    class: app.views.SpecModelView
+    'title': 'List Specification'
+    kwargs:
+      'icon': *icon0
+      'category': 'Catalog'
+      'category_icon': *icon1
+  viewtype: *VIEWa001
+  templtates:
+    specs_add
+    specs_edit
+    specs_view
+SourceCodeModelView:
+  'self':
+    datamodel:
+      interface: *IFACEa000
+      model: 'app.models.SourceCodeModel'
+  registration:
+    class: app.views.SourceCodeModelView
+    'title': 'List Code'
+    kwargs:
+      'icon': *icon0
+      'category': 'Catalog'
+      'category_icon': *icon1
+  viewtype: *VIEWa001
+  templtates:
+    sourcecode_add
+    sourcecode_edit
+    sourcecode_view
+BinaryModelView:
+  'self':
+    datamodel:
+      interface: *IFACEa000
+      model: 'app.models.BinaryModel'
+  registration:
+    class: app.views.BinaryModelView
+    'title': 'List Binary Installer'
+    kwargs:
+      'icon': *icon0
+      'category': 'Catalog'
+      'category_icon': *icon1
+  viewtype: *VIEWa001
+  templtates:
+    binary_add
+    binary_edit
+    binary_view
+ReviewModelView:
+  'self':
+    datamodel:
+      interface: *IFACEa000
+      model: 'app.models.ReviewModel'
+  registration:
+    class: app.views.ReviewModelView
+    'title': 'List Review'
+    kwargs:
+      'icon': *icon0
+      'category': 'Catalog'
+      'category_icon': *icon1
+  viewtype: *VIEWa001
+  templtates:
+    review_add
+    review_edit
+    review_view

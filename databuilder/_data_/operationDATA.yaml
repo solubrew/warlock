@@ -1,0 +1,9 @@
+'OperationModel':
+  'name':
+  'uuid': ['<(UUID)>', '<(UUID)>', '<(UUID)>']
+'OperationMaterialModel':
+  'name':
+  'uuid': ['<(UUID)>', '<(UUID)>', '<(UUID)>']
+'OperationProcessModel':
+  'name':
+  'uuid': ['<(UUID)>', '<(UUID)>', '<(UUID)>']

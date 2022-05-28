@@ -1,0 +1,180 @@
+{% extends "appbuilder/base.html" %}
+{% block content %}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;}
+	/* Style the tab */
+	.tab {
+	  overflow: hidden;
+	  border: 1px solid #ccc;
+	  background-color: #f1f1f1;
+	}
+
+	/* Style the buttons inside the tab */
+	.tab button {
+	  background-color: inherit;
+	  float: left;
+	  border: none;
+	  outline: none;
+	  cursor: pointer;
+	  padding: 14px 16px;
+	  transition: 0.3s;
+	  font-size: 17px;
+	}
+
+	/* Change background color of buttons on hover */
+	.tab button:hover {
+	  background-color: #ddd;
+	}
+
+	/* Create an active/current tablink class */
+	.tab button.active {
+	  background-color: #ccc;
+	}
+
+	/* Style the tab content */
+	.tabcontent {
+	  display: none;
+	  padding: 6px 12px;
+	  border: 1px solid #ccc;
+	  border-top: none;
+	}
+	</style>
+	<body>
+
+	<h2>Biology - BioHacking</h2>
+	<p>A Biology topic group with a specific focus on biohacking</p>
+
+	<div class="tab">
+	  <button class="tablinks" onclick="openCity(event, 'Info Web')" id="defaultOpen">Info Web</button>
+	  <button class="tablinks" onclick="openCity(event, 'Articles')">Articles</button>
+	  <button class="tablinks" onclick="openCity(event, 'Papers')">Papers</button>
+	  <button class="tablinks" onclick="openCity(event, 'Images')">Images</button>
+	  <button class="tablinks" onclick="openCity(event, 'Videos')">Videos</button>
+	  <button class="tablinks" onclick="openCity(event, 'Software')">Software</button>
+	  <button class="tablinks" onclick="openCity(event, 'Experts')">Experts</button>
+	  <button class="tablinks" onclick="openCity(event, 'Institutions')">Institutions</button>
+	  <button class="tablinks" onclick="openCity(event, 'Communities')">Communities</button>
+	  <button class="tablinks" onclick="openCity(event, 'Data Sets')">Data Sets</button>
+	</div>
+	<div id="Info Web" class="tabcontent">
+	  <span onclick="this.parentElement.style.display='none'">x</span>
+	  <h3>Info Web</h3>
+	  <p>Info Web provides a network of relations to source material<br>
+			Wikipedia: <a href="https://en.wikipedia.org/wiki/Biology">Biology</a><br>
+			<br>
+			<br>
+			collective defiance<br>
+			spiteful vissions<br>
+			league guildmage
+			nivix guildmage
+			isset charm
+			inside out
+			ebony owl
+			the locust god
+
+			<br>
+			Create a new category page
+				this is where you tell the system you are interested in a new topic
+				the system would then subdivide all current data and create the new category
+				as a subcategory of one of the research principles<br>
+			<br>
+			build out science areas<br>
+			Biology<br>
+			Chemistry<br>
+			Planetary<br>
+			Construction<br>
+			Economic<br>
+			Energy<br>
+			Materials<br>
+			Socially<br>
+			Psycology<br>
+			Physics<br>
+			Computing<br>
+			Manufacturing<br>
+			Visualizing<br>
+
+
+
+https://www.octoparse.com/blog/how-to-build-a-web-crawler-from-scratch-a-guide-for-beginners
+https://github.com/tducret/amazon-scraper-python
+https://www.xda-developers.com/scrape-websites-for-valuable-data-with-the-scrapestack-api/
+https://dev.to/coderasha/web-scraper-data-extraction-with-python-upwork-series-1-19e3
+https://flippa.com/10374335-zipline-rescue-physics-puzzle-game
+https://flippa.com/10373153-e-commerce-education?utm_source=ActiveCampaign&utm_medium=email&utm_content=9%2BYear%2BOld%2BWebsite%2BSelling%2BCrystals&utm_campaign=The%2BDaily%2B-%2BTuesday%2B7%2BJanuary%2B2020
+https://flippa.com/10373501-e-commerce-home-and-garden?utm_source=ActiveCampaign
+https://getpocket.com/explore/item/where-oil-rigs-go-to-die?utm_source=pocket-newtab
+
+		</p>
+	</div>
+	<div id="Articles" class="tabcontent">
+	  <h3>Articles</h3>
+	  <p>Articles illustrate a point of view</p>
+	</div>
+	<div id="Papers" class="tabcontent">
+	  <h3>Papers</h3>
+	  <p>Papers convey findings of research and/or technicial speculation<br>
+			<li>Basics of Biology</li>
+			<li>General Biology</li>
+		</p>
+	</div>
+	<div id="Images" class="tabcontent">
+		<h3>Images</h3>
+		<p>Images convey graphic data related to topic</p>
+	</div>
+	<div id="Videos" class="tabcontent">
+	  <h3>Videos convey visual messages related to topic</h3>
+	  <p>Videos</p>
+	</div>
+	<div id="Software" class="tabcontent">
+	  <h3>Software</h3>
+	  <p>Software links to tools to be used on topic related work</p>
+	</div>
+	<div id="Experts" class="tabcontent">
+	  <h3>Experts</h3>
+	  <p>Experts links to individuals with verified knowledge on the topic</p>
+	</div>
+	<div id="Institutions" class="tabcontent">
+		<h3>Institutions</h3>
+		<p>Institutions links to formal organizations doing work related to the topic</p>
+	</div>
+	<div id="Communities" class="tabcontent">
+	  <h3>Communities</h3>
+	  <p>Communities links to groups of individuals interested in the topic
+		<li>github Communities</li>
+		<li>twitter Communities</li>
+		<li>facebook Communities</li>
+		<li>reddit Communities</li>
+		<li>instagram Communities</li>
+		</p>
+	</div>
+	<div id="Data Sets" class="tabcontent">
+	  <h3>Data Sets</h3>
+	  <p>Data sets links to stores of data to be used in analysis of topic</p>
+	</div>
+
+
+	<script>
+	function openCity(evt, cityName) {
+	  var i, tabcontent, tablinks;
+	  tabcontent = document.getElementsByClassName("tabcontent");
+	  for (i = 0; i < tabcontent.length; i++) {
+	    tabcontent[i].style.display = "none";
+	  }
+	  tablinks = document.getElementsByClassName("tablinks");
+	  for (i = 0; i < tablinks.length; i++) {
+	    tablinks[i].className = tablinks[i].className.replace(" active", "");
+	  }
+	  document.getElementById(cityName).style.display = "block";
+	  evt.currentTarget.className += " active";
+	}
+	document.getElementById("defaultOpen").click();
+	</script>
+
+	</body>
+	</html>
+
+
+</section>
+
+{% endblock %}

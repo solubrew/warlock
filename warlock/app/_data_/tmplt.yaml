@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+
+
+html:
+  head: >
+    <!--
+      <(META)>:
+        docid:
+          name: <[name]>
+          description: >
+          expirary: <[expiration]>
+          version: <[version]>
+          path: <[LEXIvrs]>
+          outline: <[outline]>
+          authority: document|other
+          security: sec|lvl2
+          <(WT)>: -32
+    -->
+  body:
+    <[body]>
+  foot: >
+    <!--
+
+    -->

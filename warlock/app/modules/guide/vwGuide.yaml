@@ -1,0 +1,185 @@
+GuideModelView:
+  'self':
+    datamodel:
+      interface: *IFACEa000
+      model: 'app.models.GuideModel'
+  registration:
+    class: 'app.views.GuideModelView'
+    'title': 'List Guides'
+    kwargs:
+      icon: *icon0
+      category: 'Guides'
+      category_icon: *icon1
+  viewtype: *VIEWa001
+  attrs:
+    # default_view:
+    # add_widget:
+    # show_widget:
+    # list_columns:
+    # list_template: '../yellowprints/guide/templates/guide_list.html'
+    # list_widget:
+    # show_template: '../yellowprints/guide/templates/guide_show.html'
+    # extra_args:
+    # base_order:
+    # show_fieldsets:
+    #   - Summary:
+    #       fields: ['name', 'gender', 'contact_group']
+    #       'expanded': False
+    #   - 'Personal Info':
+    #       fields: []
+    # add_fieldsets:
+    #   - Summary:
+    #       fields:
+    # edit_fieldsets:
+  methods:
+    # api:
+    #   args:
+    #   attr:
+    #     _urls:
+    #       route: '/api/<guide>'
+    #       methods: ['GET']
+    #   return:
+    #     json_template: '../yellowprints/guide/templates/guide_api.json'
+    # show:
+    #   args:
+    #     seq:
+    #   attr:
+    #     _urls:
+    #       route: '/show/<guide>'
+    #       methods: ['GET']
+    #   return:
+    #     render_template: '../yellowprints/guide/templates/guide_show.html'
+GuideGroupModelView:
+  'self':
+    datamodel:
+      interface: *IFACEa000
+      model: 'app.models.GuideGroupModel'
+  registration:
+    class: app.views.GuideGroupModelView
+    'title': 'List Guide Groups'
+    kwargs:
+      'icon': *icon0
+      'category': 'Guides'
+      'category_icon': *icon1
+  viewtype: *VIEWa001
+  attrs:
+#    default_view:
+  methods:
+    # api:
+    #   args:
+    #   attr:
+    #     _urls:
+    #       route: '/api/<guidegroup>'
+    #       methods: ['GET']
+    #   return:
+    #     json_template: '../yellowprints/guide/templates/guide_api.json'
+    # show:
+    #   args:
+    #     seq:
+    #   attr:
+    #     _urls:
+    #       route: '/show/<guidegroup>'
+    #       methods: ['GET']
+    #   return:
+    #     render_template: '../yellowprints/guide/templates/guide_show.html'
+LessonModelView:
+  'self':
+    datamodel:
+      interface: *IFACEa000
+      model: 'app.models.LessonModel'
+  registration:
+    class: 'app.views.LessonModelView'
+    'title': 'List Lessons'
+    kwargs:
+      icon: *icon0
+      category: 'Guides'
+      category_icon: *icon1
+  viewtype: *VIEWa001
+  attrs:
+    #default_view: base.html
+    # add_widget:
+    # show_widget:
+    # list_columns:
+    list_template: 'lesson_list.html'
+    # list_widget:
+    show_template: 'lesson_show.html'
+    show_widget: app.widgets.LessonShowWidget
+    # extra_args:
+    # base_order:
+    # show_fieldsets:
+    # #   - Summary:
+    # #       fields: ['name', 'gender', 'contact_group']
+    # #       'expanded': False
+    # #   - 'Personal Info':
+    # #       fields: []
+    # # add_fieldsets:
+    # #   - Summary:
+    # #       fields:
+    # edit_fieldsets:
+  methods:
+    # api:
+    #   args:
+    #   attr:
+    #     _urls:
+    #       route: '/api/<lessonid>'
+    #       methods: ['GET']
+    #   return:
+    #     json_template: '../yellowprints/guide/templates/lesson_api.json'
+    # api_admin:
+    #   args:
+    #   attr:
+    #     _urls:
+    #       route: '/api/<lessonid>'
+    #       methods: ['GET']
+    #   return:
+    #     json_template: '../yellowprints/guide/templates/lesson_api_admin.json'
+    # show:
+    #   args:
+    #     seq:
+    #   attr:
+    #     _urls:
+    #       route: '/show/<lessonid>'
+    #       methods: ['GET']
+    #   return:
+    #     render_template: '../yellowprints/guide/templates/lesson_show.html'
+LessonGroupModelView:
+  'self':
+    datamodel:
+      interface: *IFACEa000
+      model: 'app.models.LessonGroupModel'
+  registration:
+    class: app.views.LessonGroupModelView
+    'title': 'List Lesson Groups'
+    kwargs:
+      'icon': *icon0
+      'category': 'Guides'
+      'category_icon': *icon1
+  viewtype: *VIEWa001
+  attrs:
+    # default_view: index
+  methods:
+    # api:
+    #   args:
+    #   attr:
+    #     _urls:
+    #       route: '/api/<lessongroupid>'
+    #       methods: ['GET']
+    #   return:
+    #     json_template: '../yellowprints/guide/templates/lesson_api.json'
+    # api_admin:
+    #   args:
+    #   attr:
+    #     _urls:
+    #       route: '/api/<lessongroupid>'
+    #       methods: ['GET']
+    #   return:
+    #     json_template: '../yellowprints/guide/templates/lesson_api_admin.json'
+    # show:
+    #   args:
+    #     seq:
+    #   attr:
+    #     _urls:
+    #       route: '/show/<lessongroupid>'
+    #       methods: ['GET']
+    #   return:
+    #     render_template: '../yellowprints/guide/templates/guide_show.html'

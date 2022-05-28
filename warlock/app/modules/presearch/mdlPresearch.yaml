@@ -1,0 +1,22 @@
+PrsearchModel:
+  name: 'Presearch Model Table'
+  description: >
+    'Pre-Search Auto Blog Model Table'
+  db:
+  columns:
+    presearchid:
+      dargs: *mdlKWARGa000
+      oargs: ''
+    name:
+      dargs: *mdlKWARGa001
+      oargs: ''
+    description:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    uuid:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    yaml:
+      dargs: *mdlKWARGa002
+      oargs:
+        size: 5000

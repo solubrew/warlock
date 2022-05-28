@@ -1,0 +1,9 @@
+'BridgeModel':
+  'name':
+  'description':
+  'uuid': ['<(UUID)>', '<(UUID)>', '<(UUID)>']
+'FSBridgeModel':
+  'name':
+  'description':
+  'uuid': ['<(UUID)>', '<(UUID)>', '<(UUID)>']
+  'homedir':

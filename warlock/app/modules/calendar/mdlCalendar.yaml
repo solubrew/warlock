@@ -1,0 +1,111 @@
+CalendarMonthModel:
+  name: 'Calendar Month Model'
+  description: >
+  db:
+  columns:
+    calendarmonthid:
+      dargs: *mdlKWARGa000
+      oargs: ''
+    description:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    uuid:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    date:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    text:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    state:
+      dargs: *mdlKWARGa002
+      oargs:
+        size: 10
+  vars:
+    MONTH_NAMES: ["January", "February", "March", "April", "May", "June",
+                    "July", "August", "September", "October", "November",
+                    "December"]
+  methods:
+    previous_month_and_year:
+    next_month_and_year:
+    current_date:
+    month_days:
+    month_days_with_weekday:
+CalendarDayModel:
+  name: 'Calendar Day Model'
+  description: >
+  db:
+  columns:
+    calendardayid:
+      dargs: *mdlKWARGa000
+      oargs: ''
+    description:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    uuid:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    date:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    text:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    state:
+      dargs: *mdlKWARGa002
+      oargs:
+        size: 10
+  vars:
+
+  methods:
+
+EventModel:
+  name: 'Event Model Table'
+  description: >
+  db:
+  columns:
+    eventid:
+      dargs: *mdlKWARGa000
+      oargs: ''
+    description:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    uuid:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    date:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    text:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    state:
+      dargs: *mdlKWARGa002
+      oargs:
+        size: 10
+ResourceModel:
+  name: 'Resource Model Table'
+  description: >
+  db:
+  columns:
+    resourceid:
+      dargs: *mdlKWARGa000
+      oargs: ''
+    name:
+      dargs: *mdlKWARGa002
+      oargs:
+        size: 10
+    description:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    uuid:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    text:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    state:
+      dargs: *mdlKWARGa002
+      oargs:
+        size: 10

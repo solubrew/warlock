@@ -1,0 +1,26 @@
+AssetModelView:
+  'self':
+    datamodel:
+      interface: *IFACEa000
+      model: 'app.models.AssetModel'
+  registration:
+    class: 'app.views.AssetModelView'
+    'title': 'List Asset'
+    kwargs:
+      'icon': *icon0
+      'category': 'Asset'
+      'category_icon': *icon1
+  viewtype: *VIEWa001
+ShareModelView:
+  'self':
+    datamodel:
+      interface: *IFACEa000
+      model: 'app.models.ShareModel'
+  registration:
+    class: 'app.views.ShareModelView'
+    'title': 'List Share'
+    kwargs:
+      'icon': *icon0
+      'category': 'Asset'
+      'category_icon': *icon1
+  viewtype: *VIEWa001

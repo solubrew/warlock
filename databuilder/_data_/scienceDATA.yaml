@@ -1,0 +1,23 @@
+'ElementModel':
+  'need to connect to datatable of elements'
+  'name':
+  'uuid': ['<(UUID)>', '<(UUID)>', '<(UUID)>']
+'EnergyModel':
+  'figure out how to break down consistently and then overlay "humna conventions"'
+  'name':
+  'uuid': ['<(UUID)>', '<(UUID)>', '<(UUID)>']
+'FrequencyModel':
+  'name':
+  'uuid': ['<(UUID)>', '<(UUID)>', '<(UUID)>']
+'MoleculeModel':
+  'name':
+  'uuid': ['<(UUID)>', '<(UUID)>', '<(UUID)>']
+'MineralModel':
+  'name':
+  'uuid': ['<(UUID)>', '<(UUID)>', '<(UUID)>']
+'MaterialModel':
+  'name':
+  'uuid': ['<(UUID)>', '<(UUID)>', '<(UUID)>']
+'ParticleModel':
+  'name':
+  'uuid': ['<(UUID)>', '<(UUID)>', '<(UUID)>']

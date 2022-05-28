@@ -1,0 +1,102 @@
+'guide_add.html':
+  'description': >
+    Add Guide template with field level role based permissions
+  document:
+    jinja: >
+      {% extends "appbuilder/base.html" %}
+      {% block content %}
+      <h1>{{ seq_title }}:</h1>
+      <h4>Tools: {{ tools }}</h4>
+      <h4>Interface: </h4><h5>{{ interface }}</h5>
+      <iframe width="560" height="315" src="{{ video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <!--<div align="center"></div>-->
+      <h6>length: {{ length }}</h6>
+      <section>
+      <h2>{{ title }}</h2>
+      <h4>Description: </h4>
+      	<p class="tab0">{{description}}</p>
+      <h4>Tags:</h4>
+      	<p class="tab0">{{tags}}</p>
+      {% for line in text %}
+      	{% if line.type = "markdown" %}
+      		{{ text }}<br>
+      	{% else %}
+      		<p class="tab0"><code>{{ line.text }}</code></p>
+      	{% endif %}
+      {% endfor %}
+      </section>
+      {% endblock %}
+'guide_api.json':
+  'document':
+    'json': >
+      {
+        'os': [
+          'alpine': {
+            'name': '<[name]>',
+            'seq_title': '<[seq_title]>',
+            'tools': '<[tools]>',
+            'video_link': '<[video_link]>',
+            'video_length': '<[video_length]>'
+          },
+          'debian': {
+            'name': '<[name]>',
+            'seq_title': '<[seq_title]>',
+            'tools': '<[tools]>',
+            'video_link': '<[video_link]>',
+            'video_length': '<[video_length]>'
+          },
+          'mac': {
+            'name': '<[name]>',
+            'seq_title': '<[seq_title]>',
+            'tools': '<[tools]>',
+            'video_link': '<[video_link]>',
+            'video_length': '<[video_length]>'
+          },
+          'windows': {
+            'name': '<[name]>',
+            'seq_title': '<[seq_title]>',
+            'tools': '<[tools]>',
+            'video_link': '<[video_link]>',
+            'video_length': '<[video_length]>'
+          }
+        ]
+      }
+'guide_edit.html':
+  document:
+    jinja:
+'guide_show.html':
+  document:
+    'jinja': >
+
+'lesson_add.html':
+  document:
+    'jinja': >
+      {% extends "appbuilder/base.html" %}
+      {% block content %}
+      {% endblock %}
+'lesson_edit.html':
+  document:
+    'jinja': >
+'lesson_show.html':
+  'document':
+    'jinja': >
+      {% extends "appbuilder/base.html" %}
+      {% import "../_base/templates/macros.html" as macros %}
+      {% block content %}
+      <h1>{{ valuecolumns.title }}:</h1>
+      <h4>Tools:</h4>
+      <h4>Interface: </h4>
+      <h5><p class="tab0">bash</p></h5>
+      {{ valuecolumns.embedframe }}
+      <h6>length: 1:42</h6>
+      <section>
+      <h2>Setup Environment</h2>
+      <h4>Description: </h4>
+      	<p class="tab0">Setup Python environment using Virtualenv and Jupyter Notebook</p>
+      <h4>Tags:</h4>
+      	<p class="tab0">#python, #python3, #excel, #virtualenv, #office, #automate, #jupyter notebook, #linux</p>
+      On debian based linux distributions the apt cmd can be used for installation<br>
+      <br>
+      {% for n in codelist %}
+        <p class="tab0"><code>{{ n }}</code></p>
+      {% endfor %}

@@ -1,0 +1,26 @@
+"modules":
+  -
+    "name": "line",
+    "height": "400",
+    "width": "500",
+    "dataSource": "http://127.0.0.1:5004/custom-inputs",
+    "override": false,
+    "guid": "a6eb10e7-26fa-7814-818a-3699b24415c5",
+    "type": "line",
+    "inputs":
+      "btn_classes": ["btn", "btn-info", "btn-sm"],
+      "submit_text": "Submit",
+      "options":
+        -
+          "type": "number",
+          "name": "entries",
+          "input_classes": ["form-control", "input-sm"],
+          "label": "Number of points",
+          "help_text": "Change the number of points per entry shown"
+  -
+    "type": "timeseries",
+    "name": "name3",
+    "width": 510,
+    "height": 400,
+    "dataSource": "http://localhost:5001/test1",
+    "order": 0

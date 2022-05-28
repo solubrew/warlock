@@ -1,0 +1,35 @@
+ArticleModelView:
+  'self':
+    datamodel:
+      interface: *IFACEa000
+      model: 'app.models.ArticleModel'
+  registration:
+    class: 'app.views.ArticleModelView'
+    'title': 'List Articles'
+    kwargs:
+      'icon': *icon0
+      'category': 'Article'
+      'category_icon': *icon1
+  viewtype: *VIEWa001
+  'attrs':
+  'methods':
+BlogModelView:
+  'self':
+    datamodel:
+      interface: *IFACEa000
+      model: 'app.models.BlogModel'
+  registration:
+    class: 'app.views.BlogModelView'
+    'title': 'List Blog'
+    kwargs:
+      'icon': *icon0
+      'category': 'Blog'
+      'category_icon': *icon1
+  viewtype: *VIEWa001
+  attrs:
+    add_template: 'form_vertical.html'
+    add_widget: 'app.widgets.BlogAddWidget'
+    list_template: 'blog_list.html'
+    show_template: 'blog_show.html'
+    show_widget: 'app.widgets.BlogShowWidget'
+  methods:

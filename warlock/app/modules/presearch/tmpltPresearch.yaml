@@ -1,0 +1,242 @@
+
+'presearchblog_add.html':
+  'document':
+    'jinja':
+'presearchblog_edit.html':
+  'document':
+    'jinja':
+'presearchblog_show.html':
+  'document':
+    'jinja': >
+      {% extends "appbuilder/base.html" %}
+
+      {% import "../_base/templates/macros.html" as macros %}
+
+      {% block content %}
+      <h1>{{ valuecolumns.title }}</h1>
+      <h4>Terms:</h4>
+      <h6>{{ valuecolumns.terms }}</h6>
+      <section>
+      	<h4>Description: </h4>
+      	{{ for i in tabs }}
+      		 <p class="tab{{ i }}">{{valuecolumns.tabtile}}</p>
+      	  <!DOCTYPE html>
+      	  <html>
+      	  <head>
+      	  <meta name="viewport" content="width=device-width, initial-scale=1">
+      	  </head>
+
+      	  <body>
+      	  <h2>Tabs</h2>
+      	  <p>Click on the buttons inside the tabbed menu:</p>
+      	  <div class="tab">
+      	    <button class="tablinks" onclick="openTab(event, tabcontent)">London</button>
+      	  </div>
+      	  <div id="London" class="tabcontent">
+      	    <h3>London</h3>
+      	    <p>London is the capital city of England.</p>
+      	  </div>
+
+      	{{ endfor }}
+
+        </body>
+        </html>
+      </section>
+      {% endblock %}
+
+      {% block tail_js %}
+      	{{ super() }}
+      	{{ macros.tab() }}
+      {% endblock %}
+
+
+
+      	<!DOCTYPE html>
+      	<html>
+      	<head>
+      	<meta name="viewport" content="width=device-width, initial-scale=1">
+      	<style>
+      	body {font-family: Arial;}
+
+      	/* Style the tab */
+      	.tab {
+      	  overflow: hidden;
+      	  border: 1px solid #ccc;
+      	  background-color: #f1f1f1;
+      	}
+
+      	/* Style the buttons inside the tab */
+      	.tab button {
+      	  background-color: inherit;
+      	  float: left;
+      	  border: none;
+      	  outline: none;
+      	  cursor: pointer;
+      	  padding: 14px 16px;
+      	  transition: 0.3s;
+      	  font-size: 17px;
+      	}
+
+      	/* Change background color of buttons on hover */
+      	.tab button:hover {
+      	  background-color: #ddd;
+      	}
+
+      	/* Create an active/current tablink class */
+      	.tab button.active {
+      	  background-color: #ccc;
+      	}
+
+      	/* Style the tab content */
+      	.tabcontent {
+      	  display: none;
+      	  padding: 6px 12px;
+      	  border: 1px solid #ccc;
+      	  border-top: none;
+      	}
+      	</style>
+      	</head>
+      	<body>
+
+      	<h2>Tabs</h2>
+      	<p>Click on the buttons inside the tabbed menu:</p>
+
+      	<div class="tab">
+      	  <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+      	  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+      	  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+      	</div>
+
+      	<div id="London" class="tabcontent">
+      	  <h3>London</h3>
+      	  <p>London is the capital city of England.</p>
+      	</div>
+
+      	<div id="Paris" class="tabcontent">
+      	  <h3>Paris</h3>
+      	  <p>Paris is the capital of France.</p>
+      	</div>
+
+      	<div id="Tokyo" class="tabcontent">
+      	  <h3>Tokyo</h3>
+      	  <p>Tokyo is the capital of Japan.</p>
+      	</div>
+
+      	<script>
+      	function openCity(evt, cityName) {
+      	  var i, tabcontent, tablinks;
+      	  tabcontent = document.getElementsByClassName("tabcontent");
+      	  for (i = 0; i < tabcontent.length; i++) {
+      	    tabcontent[i].style.display = "none";
+      	  }
+      	  tablinks = document.getElementsByClassName("tablinks");
+      	  for (i = 0; i < tablinks.length; i++) {
+      	    tablinks[i].className = tablinks[i].className.replace(" active", "");
+      	  }
+      	  document.getElementById(cityName).style.display = "block";
+      	  evt.currentTarget.className += " active";
+      	}
+      	</script>
+
+      	</body>
+      	</html>
+
+
+      </section>
+
+      {% endblock %}
+
+
+
+      <!-- {% import 'lib.html' as lib %}
+
+      {% set can_add = "can_add" | is_item_visible(modelview_name) %}
+      {% set can_show = "can_show" | is_item_visible(modelview_name) %}
+      {% set can_edit = "can_edit" | is_item_visible(modelview_name) %}
+      {% set can_delete = "can_delete" | is_item_visible(modelview_name) %}
+      {% set can_mprint = "can_mprint" | is_item_visible(modelview_name) %}
+      {% set actions = actions | get_actions_on_list(modelview_name) %}
+
+      <script type=text/javascript>
+      $('#myTabs a').click(function (e) {
+      	e.preventDefault();
+
+      	var url = $(this).attr("data-url");
+        	var href = this.hash;
+        	var pane = $(this);
+
+      	// ajax load from data-url
+      	$(href).load(url,function(result){
+      	    pane.tab('show');
+      	});
+      });
+
+      // load first tab content
+      $('#home').load($('.active a').attr("href"),function(result){
+        $('.active a').tab('show');
+      });
+
+      </script> -->
+
+
+      <!-- {% block body %}
+
+
+      <div role="tabpanel">
+
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="active"><a href="http://0.0.0.0:8080" data-target="#Home" data-toggle="tab">{{ _("Detail") }}</a> </li>
+
+                {% for view in related_views %}
+                    <li>
+                        <a href="{{url_for(view.__name__+'.list')}}"
+                        data-target="#{{view.__name__}}" data-toggle="tab"
+                        rel="tooltip" >{{view.__name__}}</a>
+                    </li>
+                {% endfor %}
+        </ul>
+
+
+      <div class="tab-content">
+          <div id="Home" class="tab-pane fade in active">
+
+          </div>
+          {% for view in related_views %}
+              <div id="{{view.__name__}}" class="tab-pane">
+
+
+      <div class="well well-sm">
+          {% block list_header scoped %}
+              {{ lib.render_list_header(can_add, page, page_size, count, filters, actions, modelview_name) }}
+          {% endblock %}
+
+      </div>
+
+      {% if count > 0 %}
+
+          {% block begin_content scoped %}
+          {% endblock %}
+
+          {% block begin_loop_header scoped %}
+          {% endblock %}
+
+          {% block begin_loop_values %}
+          {% endblock %}
+
+          {% block end_content scoped %}
+          {% endblock %}
+
+          {{ lib.action_form(actions,modelview_name) }}
+
+          <script language="javascript">
+              var modelActions = new AdminActions();
+          </script>
+
+      {% else %}
+          <b>{{_("No records found")}}</b>
+      {% endif %}
+      </div> -->
+      {% endfor %}
+      </div>
+      </div>
+      {% endblock %}

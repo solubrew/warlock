@@ -1,0 +1,37 @@
+'GuideModel':
+  'name':
+    - 'AgriculturalDevelopment&ManagementGuide'
+    - 'BusinessLegalities&RegulationsGuide'
+    - 'CommerceGuide'
+    - 'Community&CultureGuide'
+    - 'DigitalSystemsAdministrationGuide'
+    - 'HumanHealthGuide'
+    - 'InfoConsumptionGuide'
+    - 'InvestingStrategiesGuide'
+    - 'LogicMining&AnalyticsGuide'
+    - 'OperationManagementGuide'
+    - 'Science&MathsGuide'
+    - 'SecurityGuide'
+    - 'ThingDesignGuide'
+  'uuid': ['<(UUID)>', '<(UUID)>', '<(UUID)>']
+  'seq_title':
+  'tools':
+  'video':
+    - /home/solubrew/Library/G2A_of_AgriculturalDevelopment&Management/G2A_AgDevMan.ctd
+    - '/home/solubrew/Library/G2A_of_BusinessLegalities&Regulations'
+    - '/home/solubrew/Library/G2A_of_Commerce'
+    - '/home/solubrew/Library/G2A_of_Community&Culture'
+    - '/home/solubrew/Library/G2A_of_DigitalSystemsAdministration'
+    - '/home/solubrew/Library/G2A_of_HumanHealth'
+    - '/home/solubrew/Library/G2A_of_InfoConsumption'
+    - '/home/solubrew/Library/G2A_of_InvestmentStrategies'
+    - '/home/solubrew/Library/G2A_of_LogicMinig&Analytics'
+    - '/home/solubrew/Library/G2A_of_OperationManagement'
+    - '/home/solubrew/Library/G2A_of_Sci&Math'
+    - '/home/solubrew/Library/G2A_of_Security'
+    - '/home/solubrew/Library/G2A_of_ThingDesign'
+  'video_length':
+  'title':
+  'description':
+  'tags':
+  'textid':

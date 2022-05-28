@@ -1,0 +1,24 @@
+CalendarMonthModel:
+  'description':
+  'uuid': ['<(UUID)>', '<(UUID)>', '<(UUID)>']
+  'date':
+  'text':
+  'state':
+'CalendarDayModel':
+  'description':
+  'uuid': ['<(UUID)>', '<(UUID)>', '<(UUID)>']
+  'date':
+  'text':
+  'state':
+'EventModel':
+  'description':
+  'uuid': ['<(UUID)>', '<(UUID)>', '<(UUID)>']
+  'date':
+  'text':
+  'state':
+'ResourceModel':
+  'description':
+  'uuid': ['<(UUID)>', '<(UUID)>', '<(UUID)>']
+  'date':
+  'text':
+  'state':

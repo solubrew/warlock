@@ -1,0 +1,59 @@
+ArticleModel:
+  name: 'Article Model Table'
+  description: >
+  db:
+  columns:
+    articleid:
+      dargs: *mdlKWARGa000
+      oargs: ''
+    'title':
+      'dargs':
+      'oargs': 
+    description:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    uuid:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    date:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    text:
+      dargs: *mdlKWARGa002
+      oargs:
+        size: 5000
+    state:
+      dargs: *mdlKWARGa002
+      oargs:
+        size: 10
+BlogModel:
+  name: 'Blog Model Table'
+  description: >
+  db:
+  columns:
+    blogid:
+      dargs: *mdlKWARGa000
+      oargs: ''
+    title:
+      dargs: *mdlKWARGa002
+      'oargs':
+    description:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    uuid:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    date:
+      dargs: *mdlKWARGa002
+      oargs: ''
+    text:
+      dargs: *mdlKWARGa002
+      oargs:
+        size: 5000
+    tags:
+      dargs: *mdlKWARGa002
+      oargs:
+    state:
+      dargs: *mdlKWARGa002
+      oargs:
+        size: 10
