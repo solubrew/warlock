@@ -4,9 +4,7 @@
   name:
   description: >
   expirary: <[expiration]>
-  Version: <[Version]>
-  path: <[LEXIvrs]>panda/LEXI/
-  outline: <[outline]>
+  version: <[Version]>
   authority: document|this
   security: sec|lvl2
   <(WT)>: -32

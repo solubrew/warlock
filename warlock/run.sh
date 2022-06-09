@@ -1,2 +1,2 @@
-source /home/solubrew/ENVs/delta/bin/activate
+source /home/solubrew/ENVs/flaskAPP/bin/activate
 python run.py
